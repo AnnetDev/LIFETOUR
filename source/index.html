@@ -1,31 +1,71 @@
 <!DOCTYPE html>
 <html lang="ru" data-validate="html">
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lifetour</title>
-    <link rel="stylesheet" href="sass/style.scss">
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lifetour</title>
+  <link rel="stylesheet" href="sass/style.scss">
+</head>
 
-  <body class="page-body">
+<body class="page-body">
+  <header data-test="header">header</header>
+
+  <main class="main-container">
+
     <!-- пример использования спрайта -->
-    <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
+    <!-- <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
     <svg>
       <use href="/__spritemap#sprite-user"></use>
-    </svg>
+    </svg> -->
     <!-- примеры требуемых атрибутов data-test="*" -->
-    <div data-test="header">header</div>
-    <div data-test="hero">hero</div>
-    <div data-test="tours">tours</div>
-    <div data-test="training">training</div>
-    <div data-test="about">about</div>
-    <div data-test="reviews">reviews</div>
-    <div data-test="adv">adv</div>
-    <div data-test="gallery">gallery</div>
-    <div data-test="form">form</div>
-    <div data-test="footer">footer</div>
-    <script type="module" src="js/main.js"></script>
-  </body>
+    <section class="hero" data-test="hero">
+      <div class="container">
+        <h1>hero</h1>
+      </div>
+    </section>
+    <section class="tours" data-test="tours">
+      <div class="container">
+        <h2>tours</h2>
+      </div>
+    </section>
+    <section class="training" data-test="training">
+      <div class="container">
+        <h2>training</h2>
+      </div>
+    </section>
+    <section class="about" data-test="about">
+      <div class="container">
+        <h2>about</h2>
+      </div>
+    </section>
+    <section class="reviews" data-test="reviews">
+      <div class="container">
+        <h2>reviews</h2>
+      </div>
+    </section>
+    <section class="adv" data-test="adv">
+      <div class="container">
+        <h2>adv</h2>
+      </div>
+    </section>
+    <section class="gallery" data-test="gallery">
+      <div class="container">
+        <h2>gallery</h2>
+      </div>
+    </section>
+    <section class="form" data-test="form">
+      <div class="container">
+        <h2>form</h2>
+      </div>
+    </section>
+  </main>
+  <footer data-test="footer">
+    <div class="container">
+      <h2>footer</h2>
+    </div>
+  </footer>
+  <script type="module" src="js/main.js"></script>
+</body>
 
 </html>
