@@ -4,12 +4,74 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preload" href="./fonts/Montserrat-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/Montserrat-Regular.woff" as="font" type="font/woff" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/Montserrat-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/Montserrat-Medium.woff" as="font" type="font/woff" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/Montserrat-SemiBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/Montserrat-SemiBold.woff" as="font" type="font/woff" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/Montserrat-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/Montserrat-Bold.woff" as="font" type="font/woff" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/Montserrat-Extrabold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/Montserrat-Extrabold.woff" as="font" type="font/woff" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/Montserrat-Light.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/Montserrat-Light.woff" as="font" type="font/woff" crossorigin="anonymous">
   <title>Lifetour</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
   <link rel="stylesheet" href="sass/style.scss">
 </head>
 
 <body class="page-body">
-  <header data-test="header">header</header>
+  <header class="header" data-test="header">
+    <div class="container header__container">
+      <button class="header__toggle js-toggle-button" type="button">
+        <span class="header__toggle-icon"></span>
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <a class="header__logo" href="index.html">
+        <img class="header__logo-image" src="img/images/logotype.svg" width="142" height="42" alt="логотип Lifetour">
+      </a>
+      <nav class="main-navigation main-navigation--closed main-navigation--opened">
+        <ul class="main-navigation__list">
+          <li class="main-navigation__item">
+            <a class="main-navigation__link" href="#tours">
+              Туры
+            </a>
+          </li>
+          <li class="main-navigation__item">
+            <a class="main-navigation__link" href="#training">
+              Обучение
+            </a>
+          </li>
+          <li class="main-navigation__item">
+            <a class="main-navigation__link" href="#about">
+              О нас
+            </a>
+          </li>
+          <li class="main-navigation__item">
+            <a class="main-navigation__link" href="#reviews">
+              Отзывы
+            </a>
+          </li>
+          <li class="main-navigation__item">
+            <a class="main-navigation__link" href="#gallery">
+              Фотографии
+            </a>
+          </li>
+          <li class="main-navigation__item">
+            <a class="main-navigation__link" href="#footer">
+              Контакты
+            </a>
+          </li>
+        </ul>
+
+      </nav>
+      <a class="header__phone" href="tel:88000000000">8 800 000-00-00
+        <span class="visually-hidden">Телефон компании</span>
+      </a>
+
+    </div>
+  </header>
 
   <main class="main-container">
 
