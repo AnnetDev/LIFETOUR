@@ -2,23 +2,23 @@
 @import "vendor/normalize";
 
 // Common
-@import "./common/mixins.scss";
-@import "./common/fonts.scss";
-@import "./common/visually-hidden.scss";
-@import "./common/variables.scss";
-@import "./common/global.scss";
+@import "./common/mixins";
+@import "./common/fonts";
+@import "./common/visually-hidden";
+@import "./common/variables";
+@import "./common/global";
 
 
 // Blocks
-@import "./blocks/main-container.scss";
-@import "./blocks/container.scss";
-@import "./blocks/header.scss";
-@import "./blocks/main-navigation.scss";
-@import "./blocks/hero.scss";
-@import "./blocks/training.scss";
-@import "./blocks/about.scss";
-@import "./blocks/reviews.scss";
-@import "./blocks/adv.scss";
-@import "./blocks/gallery.scss";
-@import "./blocks/form.scss";
-@import "./blocks/footer.scss";
+@import "./blocks/main-container";
+@import "./blocks/container";
+@import "./blocks/header";
+@import "./blocks/main-navigation";
+@import "./blocks/hero";
+@import "./blocks/training";
+@import "./blocks/about";
+@import "./blocks/reviews";
+@import "./blocks/adv";
+@import "./blocks/gallery";
+@import "./blocks/form";
+@import "./blocks/footer";

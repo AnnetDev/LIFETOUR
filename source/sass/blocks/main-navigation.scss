@@ -1,6 +1,13 @@
 .main-navigation {
+  display: none;
+
+  &--closed {
+    display: none;
+  }
+
   &--opened {
-    @media (max-width: 1439px) {
+    @media (width <= 1439px) {
+      display: block;
       padding: 15px;
       margin: 0 auto;
       position: absolute;
@@ -18,15 +25,11 @@
     }
   }
 
-  // &--closed {
-  //   display: none;
-  // }
 
   @media (min-width: $desktop-width) {
     display: block;
     position: static;
   }
-
 }
 
 .main-navigation__list {
@@ -69,7 +72,6 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 16px;
-
   }
 
   @media (min-width: $desktop-width) {
