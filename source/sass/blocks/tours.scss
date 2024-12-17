@@ -1,0 +1,252 @@
+.tours {
+  margin: 0;
+  padding: 40px 0 20px 0;
+  // position: relative;
+
+}
+
+.tours__heading {
+  font-size: 22px;
+  line-height: 22px;
+  font-weight: 800;
+  text-align: left;
+  margin: 0 0 42px;
+  padding: 0;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    font-size: 25px;
+    line-height: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 55px;
+    line-height: 55px;
+  }
+
+  &::before {
+    position: absolute;
+    content: attr(data-heading);
+    //styleName: Mobile/Headings/H2;
+    font-size: 26px;
+    line-height: 26px;
+    text-align: left;
+    opacity: 3%;
+    top: -12px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 40px;
+      line-height: 40px;
+    }
+
+    @media (min-width: $desktop-width) {
+      font-size: 55px;
+      line-height: 55px;
+
+    }
+  }
+}
+
+.tours__swiper {
+  // position: relative;
+}
+
+.tours__swiper-container {
+  position: relative;
+}
+
+.tours__slide.swiper-slide {
+  margin: 0;
+  padding: 30px 20px;
+  min-height: 416px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-end;
+}
+
+.tours__slide-caucasus {
+  background-color: #37798f;
+}
+
+.tours__slide-altai {
+  background-color: #37798f;
+}
+
+.tours__slide-adygeya {
+  background-color: #37798f;
+}
+
+.tours__slide-ural {
+  background-color: #37798f;
+}
+
+.tours__swiper-navigation {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    position: absolute;
+    content: "";
+    width: 100px;
+    height: 20px;
+    top: -60px;
+    right: 0;
+    background-color: red;
+    border: solid 3px red;
+    z-index: 1;
+  }
+}
+
+.tours__characteristics {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  gap: 12px 0;
+}
+
+.tours__duration {
+  display: flex;
+  flex-flow: row wrap;
+  // justify-content: space-between;
+  gap: 14px;
+}
+
+.tours__location {
+  margin: 0;
+  padding: 8px 12px 8px 34px;
+  background-color: $primary-blue;
+  display: flex;
+  width: fit-content;
+  color: $primary-white;
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 500;
+  line-height: 12px;
+  text-align: left;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    mask: url("/__spritemap#sprite-pin-view") no-repeat center;
+    background-color: $primary-white;
+    width: 9px;
+    height: 12px;
+    left: 16px;
+  }
+}
+
+.tours__duration-days {
+  margin: 0;
+  padding: 4px 0 4px 32px;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 12px;
+  text-align: left;
+  color: $primary-white;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    mask: url("/__spritemap#sprite-sun-view") no-repeat center;
+    background-color: $primary-white;
+    width: 20px;
+    height: 20px;
+    left: 0;
+  }
+}
+
+.tours__duration-nights {
+  margin: 0;
+  padding: 4px 0 4px 32px;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 12px;
+  text-align: left;
+  color: $primary-white;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    mask: url("/__spritemap#sprite-moon-view") no-repeat center;
+    background-color: $primary-white;
+    width: 20px;
+    height: 20px;
+    left: 0;
+  }
+}
+
+.tours__title {
+  margin: 0 0 15px;
+  padding: 0 0 15px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  text-align: left;
+  color: $primary-white;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 80px;
+    height: 1px;
+    background-color: $primary-white;
+    opacity: 20%;
+    left: 0;
+    bottom: 0;
+  }
+}
+
+.tours__details {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.tours__details div {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 12px;
+  text-align: left;
+  color: $primary-white;
+}
+
+.tours__details .tours__date-value,
+.tours__details .tours__group-value {
+  display: flex;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 13px;
+  text-align: left;
+  margin-top: 7px;
+}
+
+
+.tours__details .tours__level-stars {
+  display: flex;
+  margin-top: 4px;
+
+}
+
+.tours__level-star {
+  mask: url("/__spritemap#sprite-star-empty-view") no-repeat center;
+  background-color: $primary-white;
+  width: 16px;
+  height: 16px;
+
+  &--filled {
+    mask: url("/__spritemap#sprite-star-filled-view") no-repeat center;
+  }
+}

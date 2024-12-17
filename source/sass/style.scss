@@ -1,5 +1,6 @@
 // Vendor
 @import "vendor/normalize";
+// @import "vendor/swiper.scss";
 
 // Common
 @import "./common/mixins";
@@ -7,14 +8,18 @@
 @import "./common/visually-hidden";
 @import "./common/variables";
 @import "./common/global";
+@import "./common/overlay-active.scss";
 
 
 // Blocks
 @import "./blocks/main-container";
 @import "./blocks/container";
+@import "./blocks/button";
 @import "./blocks/header";
+@import "./blocks/swiper";
 @import "./blocks/main-navigation";
 @import "./blocks/hero";
+@import "./blocks/tours";
 @import "./blocks/training";
 @import "./blocks/about";
 @import "./blocks/reviews";
@@ -22,3 +27,5 @@
 @import "./blocks/gallery";
 @import "./blocks/form";
 @import "./blocks/footer";
+@import "./blocks/social-list.scss";
+

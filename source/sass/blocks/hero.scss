@@ -1,0 +1,131 @@
+.hero {
+  // position: relative;
+  color: $primary-white;
+}
+
+.hero__swiper .swiper{
+  all: unset;
+  position: relative;
+  width: 768px;
+  height: 938px;
+  z-index: 4;
+  margin: 0 auto;
+
+}
+
+.hero__swiper-image {
+  display: flex;
+  position: absolute;
+  content: "";
+  width: 320px;
+  // height: 938px;
+  z-index: -1;
+  // margin: 0 auto;
+  padding: 0;
+  top: 0;
+  object-fit: cover;
+
+
+  // left: 50%;
+  // transform: translateX(-50%);
+  @media (min-width: $tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+  }
+
+}
+
+.hero__swiper h1 {
+    font-size: 26px;
+    font-weight: 800;
+    line-height: 26px;
+    text-align: center;
+    margin: 0 0 15px;
+    padding: 0;
+}
+
+.hero__swiper p {
+font-size: 15px;
+font-weight: 400;
+line-height: 20px;
+text-align: center;
+margin: 0 0 60px;
+padding: 0;
+}
+
+.hero__swiper .swiper-slide {
+  // all: unset;
+  // border: red solid 5px;
+  margin: 0 auto;
+  display: flex;
+  padding: 0;
+  width: 320px;
+  height: 568px;
+  justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    height: 1034px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+    height: 800px;
+  }
+
+  .container {
+    margin: unset;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    width: 290px;
+    padding: 144px 15px 40px;
+  }
+}
+
+.hero__link {
+  text-decoration: none;
+  width: 180px;
+}
+
+.hero__duration,
+.hero__level {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+.hero__swiper .swiper-pagination {
+  // border: red solid 5px;
+  width: 88px;
+  // height: 16px;
+  gap: 20px;
+  display: flex;
+  position: absolute;
+  content: "";
+  bottom: 40px;
+  right: 50%;
+  // transform: translateX(-50%);
+  z-index: 4;
+
+
+}
+.hero__swiper .swiper-pagination-bullet {
+  display: block;
+  width: 16px;
+  height: 16px;
+  border: 1px solid $primary-white;
+  background-color: transparent;
+  border-radius: 50%;
+  opacity: 1;
+  transition: background-color 0.3s ease, border-color 0.3s ease; /* Плавность переходов */
+}
+
+.hero__swiper .swiper-pagination-bullet-active {
+  background-color: $primary-white; /* Заливка белым */
+  border: none; /* Убираем обводку */
+}

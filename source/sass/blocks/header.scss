@@ -2,9 +2,13 @@
   background-color: $primary-blue;
   padding: 15px 0;
   position: relative;
+  z-index: 4;
 
   @media (min-width: $tablet-width) {
     padding: 20px 0;
+  }
+  @media (min-width: $desktop-width) {
+    padding: 32px 0;
   }
 }
 
@@ -49,7 +53,7 @@
     background-color: $primary-white;
     left: 0;
     top: 3px;
-    transition: transform 0.3s ease; //dosnt work
+    transition: transform 0.3s ease;
 
   }
 
@@ -61,7 +65,7 @@
     background-color: $primary-white;
     left: 0;
     bottom: 3px;
-    transition: transform 0.3s ease; //dosnt work
+    transition: transform 0.3s ease;
 
   }
 
@@ -103,12 +107,12 @@
   top: 50%;
   transform: translateY(-50%);
   left: 0;
-  transition: display 0.3s ease; //dosnt work
+  transition: display 0.3s ease;
 
 
   &--opened {
     display: none;
-    transition: display 0.3s ease; //dosnt work
+    transition: display 0.3s ease;
 
   }
 }
@@ -146,4 +150,23 @@
     font-size: 18px;
     line-height: 18px;
   }
+
+  &:hover {
+    opacity: 50%;
+  }
+
+  &:focus,
+  &:focus-within {
+    outline: none;
+    color: $primary-dark;
+  }
+
+  &:active {
+    color: #1c3374;
+  }
+}
+
+.header__phone[aria-disabled="true"] {
+  pointer-events: none;
+  color: #999999;
 }
