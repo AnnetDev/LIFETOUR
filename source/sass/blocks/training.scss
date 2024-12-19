@@ -1,3 +1,56 @@
+.training {
+margin: 0;
+padding: 20px 0;
+}
+.training__heading {
+font-size: 22px;
+font-weight: 800;
+line-height: 22px;
+text-align: left;
+margin: 0 0 35px;
+padding: 0;
+position: relative;
+
+&::before {
+  position: absolute;
+  content: attr(data-heading);
+  font-size: 26px;
+  line-height: 26px;
+  text-align: left;
+  opacity: 3%;
+  top: -12px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 55px;
+    line-height: 55px;
+  }
+}
+}
+
+.training p {
+font-size: 14px;
+font-weight: 400;
+line-height: 20px;
+text-align: left;
+margin: 0 0 25px;
+padding: 0;
+}
+
+.training__swiper-heading {
+font-size: 22px;
+font-weight: 800;
+line-height: 22px;
+text-align: left;
+margin: 0 0 25px;
+padding: 0;
+
+}
+
 .training__swiper-container {
   position: relative;
 }
@@ -35,9 +88,6 @@
   font-weight: 400;
   line-height: 16px;
   text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-
 }
 
 .training__trainer-social-link {
@@ -85,3 +135,4 @@
   pointer-events: none;
   opacity: 30%;
 }
+

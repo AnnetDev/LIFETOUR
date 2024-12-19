@@ -1,10 +1,10 @@
 import Swiper from 'swiper';
-import { Navigation, Pagination } from 'swiper/modules';
+import { Navigation } from 'swiper/modules';
 import 'swiper/scss';
 
 export function initializeTrainingSwiper() {
   new Swiper('.training__swiper', {
-    modules: [Navigation, Pagination],
+    modules: [Navigation],
     loop: false,
     grabCursor: true,
     normalizeSliderIndex: true,
