@@ -1,9 +1,88 @@
-.swiper {
-  all: unset;
-  // height: 100vw;
+// .swiper {
+//   // all: unset;
+//   // height: 100vw;
+// }
+
+// .siper-wrapper {
+//   // all: unset;
+// }
+
+.swiper-navigation {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 4px;
+    position: absolute;
+    content: "";
+    width: 100px;
+    height: 20px;
+    top: -60px;
+    right: 0; // to change
+    z-index: 1;
+    justify-content: flex-end;
+  }
+}
+.swiper-button-next,
+.swiper-button-prev {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  width: 37px;
+  height: 35px;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+
 }
 
-.siper-wrapper {
-  all: unset;
+.swiper-button-next {
+  &::before {
+    position: absolute;
+    content: "";
+    width: 13px;
+    height: 10px;
+    mask: url("/__spritemap#sprite-arrow-view") no-repeat center;
+    background-color: $primary-white;
+  }
+}
 
+.swiper-button-prev {
+  &::before {
+    position: absolute;
+    content: "";
+    width: 13px;
+    height: 10px;
+    mask: url("/__spritemap#sprite-arrow-view") no-repeat center;
+    background-color: $primary-white;
+    transform: rotate(180deg);
+  }
+}
+
+.swiper-button-next:hover::before,
+.swiper-button-prev:hover::before,
+.swiper-button-next:focus::before,
+.swiper-button-prev:focus::before,
+.swiper-button-next:focus-within::before,
+.swiper-button-prev:focus-within::before {
+  background-color: #1C3374;
+}
+
+.swiper-button-next:active::before,
+.swiper-button-prev:active::before {
+  background-color: $primary-white;
+}
+
+//разобраться с фокусом и переключением слайдов
+
+
+.swiper-button-next.swiper-button-disabled,
+.swiper-button-prev.swiper-button-disabled {
+  background-color: #999999;
+  border-color: #999999;
+  cursor: not-allowed;
+  pointer-events: none;
 }

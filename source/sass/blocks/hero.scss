@@ -141,14 +141,14 @@
 }
 
 .hero__details {
-
   display: none;
 
   @media (min-width: $desktop-width) {
     display: flex;
     flex-flow: row wrap;
     gap: 10px;
-    margin-top: auto;  }
+    margin-top: auto;
+  }
 }
 
 .hero__duration,
@@ -210,7 +210,7 @@
 
   @media (min-width: $desktop-width) {
     bottom: 80px;
-transform: unset;
+    transform: unset;
     left: unset;
     right: 120px;
   }
@@ -224,10 +224,37 @@ transform: unset;
   background-color: transparent;
   border-radius: 50%;
   opacity: 1;
+  padding: 0;
   transition: background-color 0.3s ease, border-color 0.3s ease;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #d9d9d9;
+  }
+
+  &:active {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+
+  &:focus,
+  &:focus-within,
+  &:focus-visible {
+    outline: solid 1px rgba(255, 255, 255, 0.5);
+    outline-offset: 2px;
+  } //разобраться с фокусом и переключением слайдов
 }
 
 .hero__swiper .swiper-pagination-bullet-active {
   background-color: $primary-white;
-  border: none;
+
+  &:active {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+
+  &:focus,
+  &:focus-within,
+  &:focus-visible {
+    outline: solid 1px rgba(255, 255, 255, 0.5);
+    outline-offset: 2px;
+  } //разобраться с фокусом и переключением слайдов
 }

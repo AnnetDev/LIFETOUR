@@ -2,27 +2,29 @@ import Swiper from 'swiper';
 import { Navigation, Pagination } from 'swiper/modules';
 import 'swiper/scss';
 
-export function initializeToursSwiper() {
-  new Swiper('.tours__swiper', {
+export function initializeTrainingSwiper() {
+  new Swiper('.training__swiper', {
     modules: [Navigation, Pagination],
     loop: false,
     grabCursor: true,
     normalizeSliderIndex: true,
     navigation: {
-      nextEl: '.tours__button.swiper-button-next',
-      prevEl: '.tours__button.swiper-button-prev',
+      nextEl: '.training__button.swiper-button-next',
+      prevEl: '.training__button.swiper-button-prev',
     },
     breakpoints: {
       320: {
         slidesPerView: 1,
+        initialSlide: 2,
       },
       768: {
-        slidesPerView: 2,
-        spaceBetween: 18, //?
+        slidesPerView: 3,
+        initialSlide: 0,
+        spaceBetween: 20, //?
       },
       1440: {
-        slidesPerView: 3,
-        spaceBetween: 30, //?
+        slidesPerView: 4,
+        spaceBetween: 20, //?
       },
     },
   });

@@ -1,10 +1,10 @@
 import Swiper from 'swiper';
-import { Pagination, EffectCreative } from 'swiper/modules';
+import { Pagination, EffectCreative, Navigation } from 'swiper/modules';
 import 'swiper/scss';
 
 export function initializeHeroSwiper() {
   new Swiper('.hero__swiper', {
-    modules: [Pagination, EffectCreative],
+    modules: [Pagination, EffectCreative, Navigation],
     loop: true,
     effect: 'creative',
     creativeEffect: {
@@ -22,6 +22,11 @@ export function initializeHeroSwiper() {
     pagination: {
       el: '.swiper-pagination',
       clickable: true,
+      renderBullet: function (index, className) {
+        return `<div class="${className}" tabindex="1" role="button" aria-label="Перейти к слайду ${index + 1}"></div>`;
+      }
     },
   });
 }
+
+//разобраться с фокусом и переключением слайдов

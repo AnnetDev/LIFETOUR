@@ -1,0 +1,87 @@
+.training__swiper-container {
+  position: relative;
+}
+
+
+.training__slide.swiper-slide {
+  border: 1px solid #0266C11A;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: auto;
+}
+
+.training__swiper-image {
+  display: block;
+  margin: 0 0 15px;
+  padding: 0;
+}
+
+.training__slide h3 {
+  margin: 0 0 15px;
+  padding: 0;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  text-align: left;
+  max-width: 170px;
+}
+
+.training__slide p {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+
+}
+
+.training__trainer-social-link {
+  position: absolute;
+  content: "";
+  top: 230px;
+  right: 15px;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  border: 1px solid rgba(45, 56, 63, 0.3);
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    border-color:  $primary-dark;
+  }
+
+  &:focus,
+  &:focus-within {
+    border-color: transparent;
+    outline: none;
+  }
+  &:active {
+    background-color: $primary-blue;
+    border-color: $primary-blue;
+
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    mask: url("/__spritemap#sprite-Vk-view") center no-repeat;
+    background-color: $primary-dark;
+    width: 14px;
+    height: 8px;
+  }
+
+  &:active::before {
+    background-color: $primary-white;
+    }
+}
+
+.training__trainer-social-link[aria-disabled="true"] {
+  pointer-events: none;
+  opacity: 30%;
+}
