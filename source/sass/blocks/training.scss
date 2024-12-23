@@ -1,58 +1,64 @@
 .training {
-margin: 0;
-padding: 20px 0;
-}
-.training__heading {
-font-size: 22px;
-font-weight: 800;
-line-height: 22px;
-text-align: left;
-margin: 0 0 35px;
-padding: 0;
-position: relative;
-
-&::before {
-  position: absolute;
-  content: attr(data-heading);
-  font-size: 26px;
-  line-height: 26px;
-  text-align: left;
-  opacity: 3%;
-  top: -12px;
+  margin: 0;
+  padding: 20px 0;
 
   @media (min-width: $tablet-width) {
-    font-size: 40px;
-    line-height: 40px;
-  }
-
-  @media (min-width: $desktop-width) {
-    font-size: 55px;
-    line-height: 55px;
+    padding: 40px 0;
   }
 }
+
+.training__heading {
+  font-size: 22px;
+  font-weight: 800;
+  line-height: 22px;
+  text-align: left;
+  margin: 0 0 35px;
+  padding: 0;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: attr(data-heading);
+    font-size: 26px;
+    line-height: 26px;
+    text-align: left;
+    opacity: 3%;
+    top: -12px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 40px;
+      line-height: 40px;
+    }
+
+    @media (min-width: $desktop-width) {
+      font-size: 55px;
+      line-height: 55px;
+    }
+  }
 }
 
 .training p {
-font-size: 14px;
-font-weight: 400;
-line-height: 20px;
-text-align: left;
-margin: 0 0 25px;
-padding: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  margin: 0 0 25px;
+  padding: 0;
 }
 
 .training__swiper-heading {
-font-size: 22px;
-font-weight: 800;
-line-height: 22px;
-text-align: left;
-margin: 0 0 25px;
-padding: 0;
+  font-size: 22px;
+  font-weight: 800;
+  line-height: 22px;
+  text-align: left;
+  margin: 0 0 25px;
+  padding: 0;
 
 }
 
 .training__swiper-container {
   position: relative;
+  margin-bottom: 25px;
 }
 
 
@@ -103,7 +109,7 @@ padding: 0;
   align-items: center;
 
   &:hover {
-    border-color:  $primary-dark;
+    border-color: $primary-dark;
   }
 
   &:focus,
@@ -111,6 +117,7 @@ padding: 0;
     border-color: transparent;
     outline: none;
   }
+
   &:active {
     background-color: $primary-blue;
     border-color: $primary-blue;
@@ -128,7 +135,7 @@ padding: 0;
 
   &:active::before {
     background-color: $primary-white;
-    }
+  }
 }
 
 .training__trainer-social-link[aria-disabled="true"] {
@@ -136,3 +143,244 @@ padding: 0;
   opacity: 30%;
 }
 
+.training__process {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-flow: column wrap;
+  list-style: none;
+  gap: 25px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    gap: 104px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 23px;
+  }
+}
+
+.training__process-wrapper {
+  position: relative;
+  display: flex;
+  flex-flow: column wrap;
+  list-style: none;
+  gap: 25px;
+
+
+  &::after {
+    position: absolute;
+    content: "";
+    display: flex;
+    width: 2px;
+    background-color: $primary-blue;
+    left: 6px;
+    height: calc((100%) - 22px);
+    margin: 11px 0 0 0;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+
+    @media (min-width: $desktop-width) {
+      position: absolute;
+      content: "";
+      background-color: $primary-blue;
+      margin: 0;
+      display: flex;
+      height: 2px;
+      width: 1200px;
+      bottom: -6px;
+      left: 22px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 232px 272px;
+    grid-template-rows: auto;
+    row-gap: 104px;
+    column-gap: 174px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 0;
+  }
+}
+
+.training .training__process-title {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 16px;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 18px;
+  }
+  @media (min-width: $tablet-width) {
+font-size: 21px;
+line-height: 21px;
+  }
+}
+
+.training__process-item {
+  list-style: none;
+  margin: 0;
+  padding: 0 0 0 63px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 0 0 35px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 253px;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 14px;
+    height: 14px;
+    background-color: $primary-blue;
+    border-radius: 50%;
+    left: 0;
+    top: 11px;
+
+    // transform: translateY(-50%);
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+
+    @media (min-width: $tablet-width) {
+      display: block;
+      position: absolute;
+      content: "";
+      width: 14px;
+      height: 14px;
+      background-color: $primary-blue;
+      border-radius: 50%;
+      top: unset;
+      bottom: -12px;
+      left: 22px;
+    }
+  }
+}
+
+.training__process-item--equipment {
+  @media (min-width: $tablet-width) {
+    grid-column: 1;
+  }
+}
+
+.training__process-item--ecology,
+.training__process-item--obstacles {
+  @media (min-width: $tablet-width) {
+    grid-column: 2;
+  }
+}
+
+.training__process-item--ecology {
+  @media (min-width: $tablet-width) {
+    grid-row: 2;
+  }
+}
+
+.training__process-item--obstacles {
+  @media (min-width: $tablet-width) {
+    grid-row: 1;
+  }
+}
+
+.training__process-item--map::after {
+  position: absolute;
+  content: "";
+  mask: url("/__spritemap#sprite-map-view") no-repeat center;
+  background-color: $primary-dark;
+  width: 25px;
+  height: 25px;
+  top: 0;
+  left: 30px;
+
+  @media (min-width: $tablet-width) {
+    left: 0;
+  }
+}
+
+.training__process-item--equipment::after {
+  position: absolute;
+  content: "";
+  mask: url("/__spritemap#sprite-boots-view") no-repeat center;
+  background-color: $primary-dark;
+  width: 25px;
+  height: 25px;
+  top: 0;
+  left: 30px;
+
+  @media (min-width: $tablet-width) {
+    left: 0;
+  }
+
+}
+
+.training__process-item--ecology::after {
+  position: absolute;
+  content: "";
+  mask: url("/__spritemap#sprite-pine-tree-view") no-repeat center;
+  background-color: $primary-dark;
+  width: 25px;
+  height: 25px;
+  top: 0;
+  left: 30px;
+
+  @media (min-width: $tablet-width) {
+    left: 0;
+  }
+
+}
+
+.training__process-item--obstacles::after {
+  position: absolute;
+  content: "";
+  mask: url("/__spritemap#sprite-mountain-view") no-repeat center;
+  background-color: $primary-dark;
+  width: 25px;
+  height: 25px;
+  top: 0;
+  left: 30px;
+
+  @media (min-width: $tablet-width) {
+    left: 0;
+  }
+
+}
+
+.training .training__process-description {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+}
+
+.training__process-item--obstacles .training__process-description {
+  width: 200px;
+}
