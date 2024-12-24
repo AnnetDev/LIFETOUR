@@ -16,9 +16,12 @@
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
-  align-items: center;
-  gap: 14px 0;
+  align-items: flex-start;
+  gap: 15px 0;
 
+  @media (min-width: $tablet-width) {
+    align-items: center
+  }
 }
 
 .header__toggle {
@@ -52,7 +55,7 @@
     height: 2px;
     background-color: $primary-white;
     left: 0;
-    top: 3px;
+    top: 4px;
     transition: transform 0.3s ease;
 
   }

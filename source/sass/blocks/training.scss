@@ -258,7 +258,7 @@ line-height: 21px;
       display: none;
     }
 
-    @media (min-width: $tablet-width) {
+    @media (min-width: $desktop-width) {
       display: block;
       position: absolute;
       content: "";
