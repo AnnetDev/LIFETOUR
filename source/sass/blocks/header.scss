@@ -7,8 +7,9 @@
   @media (min-width: $tablet-width) {
     padding: 20px 0;
   }
+
   @media (min-width: $desktop-width) {
-    padding: 32px 0;
+    padding: 42px 0;
   }
 }
 
@@ -20,8 +21,12 @@
   gap: 15px 0;
 
   @media (min-width: $tablet-width) {
-    align-items: center
+    align-items: center;
   }
+
+  // @media (min-width: $desktop-width) {
+  //   padding: 10px 0;
+  // }
 }
 
 .header__toggle {
@@ -42,6 +47,10 @@
 
   @media (max-width: $mobile-width-only) {
     margin-right: 122px;
+  }
+
+  @media (max-width: $tablet-width) {
+    margin-right: 112px;
   }
 
   @media (min-width: $desktop-width) {
@@ -67,7 +76,7 @@
     height: 2px;
     background-color: $primary-white;
     left: 0;
-    bottom: 3px;
+    bottom: 4px;
     transition: transform 0.3s ease;
 
   }
@@ -125,6 +134,10 @@
   margin: 0;
   padding: 0;
 
+  @media (min-width: $desktop-width) {
+    margin-left: 32px;
+    margin-right: 30px;
+  }
 }
 
 .header__logo-image {
@@ -149,11 +162,13 @@
     font-size: 16px;
     line-height: 16px;
     margin-left: 0;
+    margin: 3px 0 0 0;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 18px;
     line-height: 18px;
+    margin: 0;
   }
 
   &:hover {

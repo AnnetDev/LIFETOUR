@@ -81,10 +81,16 @@
   align-items: center;
   // position: relative;
 
+  @media (min-width: $tablet-width) {
+    padding-bottom: 100px;
+  }
+
   @media (min-width: $desktop-width) {
     align-items: flex-start;
     justify-content: flex-start;
     width: 1440px;
+    padding-bottom: 80px;
+
   }
 }
 
@@ -105,7 +111,7 @@
     font-size: 77px;
     line-height: 77px;
     text-align: left;
-    margin: 200px 0 25px;
+    margin: 160px 0 24px;
     width: 790px;
   }
 }
@@ -122,12 +128,12 @@
     font-size: 17px;
     line-height: 24px;
     margin: 0 0 35px;
-
+width: 550px;
   }
 
   @media (min-width: $desktop-width) {
     text-align: left;
-    width: 790px;
+    width: 470px;
   }
 }
 
@@ -157,7 +163,7 @@
 
   @media (min-width: $desktop-width) {
     display: block;
-    padding: 14px 20px 14px 40px;
+    padding: 13px 18px 13px 40px;
     font-size: 12px;
     font-weight: 400;
     line-height: 16px;
@@ -208,8 +214,12 @@
   transform: translateX(-50%);
   z-index: 2;
 
+  @media (min-width: $tablet-width) {
+    height: 20px;
+    width: 100px;
+  }
   @media (min-width: $desktop-width) {
-    bottom: 80px;
+    bottom: 92px;
     transform: unset;
     left: unset;
     right: 120px;
@@ -227,6 +237,11 @@
   padding: 0;
   transition: background-color 0.3s ease, border-color 0.3s ease;
   cursor: pointer;
+  @media (min-width: $tablet-width) {
+    width: 20px;
+    height: 20px;
+
+  }
 
   &:hover {
     background-color: #d9d9d9;
