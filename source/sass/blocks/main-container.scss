@@ -1,3 +1,65 @@
 .main-container {
   flex-grow: 1;
+  overflow: hidden;
+
+  position: relative;
+  min-width: 320px;
+  max-width: 320px;
+  margin: 0 auto;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 346px;
+    height: 595px;
+    top: 577px;
+    left: 77px;
+    background-image:
+      image-set(url("../../img/images/clouds-mobile@1x.webp") 1x,
+        url("../../img/images/clouds-mobile@2x.webp") 2x,
+        url("../../img/images/clouds-mobile@1x.png") 1x,
+        url("../../img/images/clouds-mobile@2x.png") 2x,
+      );
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center top;
+
+    @media (min-width: $tablet-width) {
+      background-image:
+        image-set(url("../../img/images/clouds-tablet@1x.webp") 1x,
+          url("../../img/images/clouds-tablet@2x.webp") 2x,
+          url("../../img/images/clouds-tablet@1x.png") 1x,
+          url("../../img/images/clouds-tablet@2x.png") 2x,
+        );
+
+      width: 840px;
+      height: 1630px;
+      top: 942px;
+      left: 115px;
+    }
+
+    @media (min-width: $desktop-width) {
+      background-image:
+        image-set(url("../../img/images/clouds-desktop@1x.webp") 1x,
+          url("../../img/images/clouds-desktop@2x.webp") 2x,
+          url("../../img/images/clouds-desktop@1x.png") 1x,
+          url("../../img/images/clouds-desktop@2x.png") 2x,
+        );
+
+        width: 840px;
+        height: 1832px;
+        top: 674px;
+        left: 703px;
+
+      }
+  }
+
+  @media (min-width: $tablet-width) {
+    max-width: 768px;
+
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1440px;
+  }
 }

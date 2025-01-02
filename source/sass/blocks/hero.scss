@@ -74,7 +74,7 @@
 
 .hero__slide-container {
   padding-top: 40px;
-  padding-bottom: 56px;
+  padding-bottom: 54px;
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
@@ -121,7 +121,7 @@
   font-weight: 400;
   line-height: 20px;
   text-align: center;
-  margin: 0 0 59px;
+  margin: 0 0 60px;
   padding: 0;
 
   @media (min-width: $tablet-width) {
@@ -144,6 +144,11 @@ width: 550px;
   font-weight: 500;
   line-height: 16px;
   text-align: center;
+  margin-bottom: 3px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: unset;
+  }
 }
 
 .hero__details {
