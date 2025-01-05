@@ -19,6 +19,7 @@ export function initializeAdvSwiper() {
       slidesPerView: 3.3,
       spaceBetween: 30,
       slidesPerGroup: 2,
+      // loopFillGroupWithBlank: true,
     });
   } else if (!isDesktop && advSlider) {
     advSlider.destroy(true, true);

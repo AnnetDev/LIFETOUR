@@ -9,6 +9,7 @@ import { initializeToursSwiper } from './modules/swiper-tours';
 import { initializeTrainingSwiper } from './modules/swiper-trainers';
 import { initializeReviewsSwiper } from './modules/swiper-reviews';
 import { initializeAdvSwiper } from './modules/swiper-adv';
+import { initializeGalleySwiper } from './modules/swiper-gallery';
 
 
 toggleMenu();
@@ -17,3 +18,4 @@ initializeToursSwiper();
 initializeTrainingSwiper();
 initializeReviewsSwiper();
 initializeAdvSwiper();
+initializeGalleySwiper();
