@@ -7,6 +7,7 @@
   @media (min-width: $tablet-width) {
     margin: 0 0 40px;
   }
+
   @media (min-width: $desktop-width) {
     flex-direction: row;
     margin: 0 0 95px;
@@ -191,33 +192,46 @@
 .contacts__list-address {
   position: relative;
   display: block;
+}
 
-  &::before {
-    position: absolute;
-    content: "";
-    left: 0;
-    top: 0;
+.contacts__list-phone::before,
+.contacts__list-email::before,
+.contacts__list-address::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  width: 22px;
+  height: 22px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain; /* или auto, если размер не нужно подгонять */
+  @media (min-width: $tablet-width) {
+    width: 24px;
+    height: 24px;
+  }
+  @media (min-width: $desktop-width) {
+    width: 26px;
+    height: 26px;
   }
 }
 
+
 .contacts__list-phone::before {
-  background: url("/__spritemap#phone-view") no-repeat center;
-  // background-color: red;
-  width: 22px;
-  height: 22px; //20x20?
+  background-image: url("/__spritemap#sprite-phone-view");
+  // background-image: url("../../img/sprite/phone.svg");
 }
 
 .contacts__list-email::before {
-  background: url("/__spritemap#-view") no-repeat center;
-  width: 20px;
-  height: 14px;
-  // background-repeat: no-repeat;
-  // background-size: auto;
-  // background-position: center top;
+  background-image: url("/__spritemap#sprite-mail-view");
+  // background-image: url("../../img/sprite/mail.svg");
+  // width: 20px;
+  // height: 14px;
 }
 
 .contacts__list-address::before {
-  background: url("/__spritemap#pin-contacts-view") no-repeat center;
-  width: 15px;
-  height: 20px;
+  // background-image: url("../../img/sprite/pin-contacts.svg");
+  background-image: url("/__spritemap#sprite-pin-contacts-view");
+  // width: 15px;
+  // height: 20px;
 }

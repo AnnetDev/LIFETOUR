@@ -14,6 +14,7 @@
     height: 595px;
     top: 577px;
     left: 77px;
+    z-index: -1;
     background-image:
       image-set(url("../../img/images/clouds-mobile@1x.webp") 1x,
       url("../../img/images/clouds-mobile@2x.webp") 2x,
@@ -35,7 +36,7 @@
       width: 840px;
       height: 1630px;
       top: 942px;
-      left: 115px;
+      left: 116px;
     }
 
     @media (min-width: $desktop-width) {
@@ -49,7 +50,7 @@
       width: 840px;
       height: 1832px;
       top: 674px;
-      left: 703px;
+      left: 704px;
     }
   }
 

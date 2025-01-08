@@ -19,10 +19,13 @@
     content: "";
     width: 100px;
     height: 20px;
-    top: -60px;
+    top: -65px;
     right: 0; // to change
     z-index: 1;
     justify-content: flex-end;
+  }
+  @media (min-width: $desktop-width) {
+    top: -54px;
   }
 }
 

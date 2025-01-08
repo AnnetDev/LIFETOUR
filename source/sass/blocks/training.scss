@@ -1,9 +1,13 @@
 .training {
   margin: 0;
-  padding: 20px 0;
+  padding: 37px 0;
 
   @media (min-width: $tablet-width) {
-    padding: 40px 0;
+    padding: 60px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 63px 0;
   }
 }
 
@@ -12,7 +16,7 @@
   font-weight: 800;
   line-height: 22px;
   text-align: left;
-  margin: 0 0 35px;
+  margin: 0 0 33px;
   padding: 0;
   position: relative;
 
@@ -35,6 +39,17 @@
       line-height: 55px;
     }
   }
+
+  @media (min-width: $tablet-width) {
+    font-size: 25px;
+    line-height: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 35px;
+    line-height: 35px;
+  }
+
 }
 
 .training p {
@@ -42,8 +57,25 @@
   font-weight: 400;
   line-height: 20px;
   text-align: left;
-  margin: 0 0 25px;
+  margin: 0 0 28px;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 678px;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 820px;
+
+    margin: 0 0 61px;
+  }
+}
+
+.training__swiper p {
+  width: unset;
 }
 
 .training__swiper-heading {
@@ -51,29 +83,61 @@
   font-weight: 800;
   line-height: 22px;
   text-align: left;
-  margin: 0 0 25px;
+  margin: 0 0 22px;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 25px;
+    line-height: 25px;
+    margin: 0 0 38px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 35px;
+    line-height: 35px;
+    margin: 0 0 15px;
+  }
+
 }
 
 .training__swiper-container {
   position: relative;
   margin-bottom: 25px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 58px;
+  }
 }
 
 
 .training__slide.swiper-slide {
   border: 1px solid #0266c11a;
-  padding: 15px;
+  padding: 15px 16px;
   display: flex;
   flex-direction: column;
   position: relative;
   height: auto;
+  background-color: $primary-white;
+
+  @media (min-width: $tablet-width) {
+    min-height: 388px;
+    padding: 15px 14px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 356px;
+    padding: 15px 14px;
+  }
 }
 
 .training__swiper-image {
   display: block;
   margin: 0 0 15px;
   padding: 0;
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 16px;
+  }
 }
 
 .training__slide h3 {
@@ -84,6 +148,14 @@
   line-height: 16px;
   text-align: left;
   max-width: 170px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 14px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 140px;
+  }
 }
 
 .training__slide p {
@@ -99,7 +171,7 @@
   position: absolute;
   content: "";
   top: 230px;
-  right: 15px;
+  right: 14px;
   width: 24px;
   height: 24px;
   display: flex;
@@ -188,9 +260,9 @@
       margin: 0;
       display: flex;
       height: 2px;
-      width: 1200px;
-      bottom: -6px;
-      left: 22px;
+      width: 1180px;
+      bottom: -10px;
+      left: 20px;
     }
   }
 
@@ -206,6 +278,7 @@
     display: flex;
     flex-flow: row wrap;
     gap: 0;
+    padding: 0 0 0 11px;
   }
 }
 
@@ -214,17 +287,19 @@
   font-weight: 700;
   line-height: 16px;
   text-align: left;
-  margin: 0;
+  margin: 0 0 24px;
   padding: 0;
 
   @media (min-width: $tablet-width) {
     font-size: 18px;
     line-height: 18px;
+    margin: 0 0 102px;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     font-size: 21px;
     line-height: 21px;
+    margin: 0 0 26px;
   }
 }
 
@@ -236,6 +311,7 @@
 
   @media (min-width: $tablet-width) {
     padding: 0 0 0 35px;
+    width: 235px;
   }
 
   @media (min-width: $desktop-width) {
@@ -266,8 +342,8 @@
       background-color: $primary-blue;
       border-radius: 50%;
       top: unset;
-      bottom: -12px;
-      left: 22px;
+      bottom: -16px;
+      left: 10px;
     }
   }
 }
@@ -288,6 +364,13 @@
 .training__process-item--ecology {
   @media (min-width: $tablet-width) {
     grid-row: 2;
+  }
+  @media (min-width: $desktop-width) {
+    // width: 235px;
+    padding-right: 15px;
+    &::before {
+      left: -10px;
+    }
   }
 }
 
@@ -310,6 +393,10 @@
   @media (min-width: $tablet-width) {
     left: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    top: 2px;
+  }
 }
 
 .training__process-item--equipment::after {
@@ -324,6 +411,9 @@
 
   @media (min-width: $tablet-width) {
     left: 0;
+  }
+  @media (min-width: $desktop-width) {
+    top: 2px;
   }
 }
 
@@ -340,6 +430,9 @@
   @media (min-width: $tablet-width) {
     left: 0;
   }
+  @media (min-width: $desktop-width) {
+    top: 2px;
+  }
 }
 
 .training__process-item--obstacles::after {
@@ -355,6 +448,9 @@
   @media (min-width: $tablet-width) {
     left: 0;
   }
+  @media (min-width: $desktop-width) {
+    top: 2px;
+  }
 }
 
 .training .training__process-description {
@@ -368,6 +464,7 @@
   @media (min-width: $tablet-width) {
     font-size: 14px;
     line-height: 22px;
+    width: 100%;
   }
 
   @media (min-width: $desktop-width) {
