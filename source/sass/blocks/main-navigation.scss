@@ -72,8 +72,7 @@
   // &:focus-visible {
   //   outline: solid 1px $primary-white;
   // }
-
-  }
+}
 
 
 .main-navigation__link {
@@ -104,7 +103,7 @@
 
   &:hover {
     box-shadow: 0 1px 0 0 $primary-white;
-    }
+  }
 
   &:focus,
   &:focus-within,
@@ -114,6 +113,7 @@
 
   &:active {
     color: #1c3374;
+    outline: none;
   }
 }
 

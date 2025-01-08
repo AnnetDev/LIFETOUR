@@ -1,5 +1,6 @@
 // Vendor
 @import "vendor/normalize";
+
 // @import "vendor/swiper.scss";
 
 // Common
@@ -8,7 +9,7 @@
 @import "./common/visually-hidden";
 @import "./common/variables";
 @import "./common/global";
-@import "./common/overlay-active.scss";
+@import "./common/overlay-active";
 
 
 // Blocks
@@ -27,5 +28,5 @@
 @import "./blocks/gallery";
 @import "./blocks/form";
 @import "./blocks/footer";
-@import "./blocks/social-list.scss";
-
+@import "./blocks/contacts";
+@import "./blocks/social-list";

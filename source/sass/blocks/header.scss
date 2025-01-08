@@ -38,6 +38,7 @@
   background-color: inherit;
   border: none;
   display: block;
+
   // border: solid 1px red;
   // mask-image: url("/__spritemap#sprite-menu-view");
   // mask-size: contain;
@@ -66,7 +67,6 @@
     left: 0;
     top: 4px;
     transition: transform 0.3s ease;
-
   }
 
   &::after {
@@ -78,12 +78,12 @@
     left: 0;
     bottom: 4px;
     transition: transform 0.3s ease;
-
   }
 
   &--opened::before {
     transform: rotate(45deg);
     top: 50%;
+
     // transform: translateY(-50%);
     width: 22px;
   }
@@ -91,16 +91,17 @@
   &--opened::after {
     transform: rotate(-45deg);
     top: 50%;
+
     // transform: translateY(-50%);
     width: 22px;
   }
-
 }
 
 .header__toggle-icon {
   margin: 0;
   padding: 0;
   display: block;
+
   // background-image: url("/source/img/sprite/menu.svg");
   // mask-size: contain;
   // mask-repeat: no-repeat;
@@ -125,7 +126,6 @@
   &--opened {
     display: none;
     transition: display 0.3s ease;
-
   }
 }
 
@@ -162,7 +162,7 @@
     font-size: 16px;
     line-height: 16px;
     margin-left: 0;
-    margin: 3px 0 0 0;
+    margin: 3px 0 0;
   }
 
   @media (min-width: $desktop-width) {

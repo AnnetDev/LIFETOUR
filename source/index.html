@@ -31,7 +31,7 @@
       <a class="header__logo" href="index.html">
         <img class="header__logo-image" src="img/images/logotype.svg" width="142" height="42" alt="логотип Lifetour">
       </a>
-      <nav class="main-navigation">
+      <nav class="main-navigation" aria-label="Главгая навигация сайта">
         <ul class="main-navigation__list">
           <li class="main-navigation__item">
             <a class="main-navigation__link" href="#tours">
@@ -114,7 +114,7 @@
               <h2>Захватывающие вершины Кавказа</h2>
               <p>В сопровождении опытных гидов вы пройдёте через потрясающие ландшафты и совершите восход на вершину
                 горы Чегет.</p>
-              <a class="hero__link button" href="#" type="button">Смотреть тур</a>
+              <a class="hero__link button" href="#">Смотреть тур</a>
 
               <div class="hero__details">
                 <div class="hero__duration">6 дней/5 ночей</div>
@@ -147,7 +147,7 @@
               <h2>Невероятная природа Камчатки</h2>
               <p>Незабываемое приключение, во время которого вы отправитесь в путешествие по одному из самых нетронутых
                 уголков дикой природы в мире.</p>
-              <a class="hero__link button" href="#" type="button">Смотреть тур</a>
+              <a class="hero__link button" href="#">Смотреть тур</a>
               <div class="hero__details">
                 <div class="hero__duration">9 дней/10 ночей</div>
                 <div class="hero__level">Средняя сложность</div>
@@ -177,7 +177,7 @@
               <h2>Магические пейзажи Алтайского Края</h2>
               <p>Алтайский трекинг-тур — это захватывающее приключение с посещением магических и захватывающих
                 дух ландшафтов Алтайских гор.</p>
-              <a class="hero__link button" href="#" type="button">Смотреть тур</a>
+              <a class="hero__link button" href="#">Смотреть тур</a>
               <div class="hero__details">
                 <div class="hero__duration">8 дней/7 ночей</div>
                 <div class="hero__level">Лёгкая сложность</div>
@@ -492,25 +492,25 @@
           </div>
         </div>
 
-        <ul class="training__process">
-          <h3 class="training__process-title">Процесс обучения</h3>
-          <div class="training__process-wrapper">
-            <li class="training__process-item training__process-item--map">
-              <p class="training__process-description">Изучение спортивного туристского движения</p>
-            </li>
-            <li class="training__process-item training__process-item--equipment">
-              <p class="training__process-description">Подготовка и техническое снаряжение в походах</p>
-            </li>
-            <li class="training__process-item training__process-item--ecology">
-              <p class="training__process-description">Лекции по окружающей среде, экологии и гигиене</p>
-            </li>
-            <li class="training__process-item training__process-item--obstacles">
-              <p class="training__process-description">Разъяснение сложности горных препятствий</p>
-            </li>
-          </div>
+        <h3 class="training__process-title">Процесс обучения</h3>
+        <ul class="training__process training__process-wrapper">
+          <!-- <div class="training__process-wrapper"> -->
+          <li class="training__process-item training__process-item--map">
+            <p class="training__process-description">Изучение спортивного туристского движения</p>
+          </li>
+          <li class="training__process-item training__process-item--equipment">
+            <p class="training__process-description">Подготовка и техническое снаряжение в походах</p>
+          </li>
+          <li class="training__process-item training__process-item--ecology">
+            <p class="training__process-description">Лекции по окружающей среде, экологии и гигиене</p>
+          </li>
+          <li class="training__process-item training__process-item--obstacles">
+            <p class="training__process-description">Разъяснение сложности горных препятствий</p>
+          </li>
+          <!-- </div> -->
         </ul>
       </div>
-      </div>
+
     </section>
 
     <section class="about" data-test="about">
@@ -785,7 +785,8 @@
     <section class="gallery" data-test="gallery">
       <div class="container">
         <h2 class="gallery__heading" data-heading="Фотогалерея">Фотогалерея</h2>
-        <p>Добавляйте фото с хэштегом #лайфтур, а&nbsp;также&nbsp;отмечайте нас на фото. Лучшие фотографии украсят этот раздел
+        <p>Добавляйте фото с хэштегом #лайфтур, а&nbsp;также&nbsp;отмечайте нас на фото. Лучшие фотографии украсят этот
+          раздел
           нашего сайта.</p>
       </div>
       <div class="gallery__swiper swiper">
@@ -836,7 +837,7 @@
                 width="252" height="210">
               <img class="gallery__swiper-image" src="img/images/gallery/gallery-2-mobile@1x.jpg"
                 srcset="img/images/gallery/gallery-2-mobile@2x.jpg" width="157" height="135"
-                alt="Турист на вершине горы">
+                alt="Туристы вокруг костра">
             </picture>
             <picture>
               <source type="image/webp" media="(min-width: 1440px)"
@@ -857,7 +858,7 @@
                 width="252" height="202">
               <img class="gallery__swiper-image" src="img/images/gallery/gallery-3-mobile@1x.jpg"
                 srcset="img/images/gallery/gallery-3-mobile@2x.jpg" width="157" height="126"
-                alt="Турист на вершине горы">
+                alt="Компас и вид с вершины">
             </picture>
 
           </div>
@@ -881,8 +882,7 @@
                 srcset="img/images/gallery/gallery-4-tablet@1x.jpg 1x, img/images/gallery/gallery-4-tablet@2x.jpg 2x"
                 width="253" height="418">
               <img class="gallery__swiper-image" src="img/images/gallery/gallery-4-mobile@1x.jpg"
-                srcset="img/images/gallery/gallery-4-mobile@2x.jpg" width="158" height="266"
-                alt="Турист на вершине горы">
+                srcset="img/images/gallery/gallery-4-mobile@2x.jpg" width="158" height="266" alt="Туристическая тропа">
             </picture>
           </div>
 
@@ -906,7 +906,7 @@
                 width="252" height="210">
               <img class="gallery__swiper-image" src="img/images/gallery/gallery-5-mobile@1x.jpg"
                 srcset="img/images/gallery/gallery-5-mobile@2x.jpg" width="157" height="135"
-                alt="Турист на вершине горы">
+                alt="Туристы у подножия горы">
             </picture>
 
             <picture>
@@ -928,7 +928,7 @@
                 width="252" height="202">
               <img class="gallery__swiper-image" src="img/images/gallery/gallery-6-mobile@1x.jpg"
                 srcset="img/images/gallery/gallery-6-mobile@2x.jpg" width="157" height="126"
-                alt="Турист на вершине горы">
+                alt="Палатка под звездным небом">
             </picture>
 
           </div>
@@ -952,8 +952,7 @@
                 srcset="img/images/gallery/gallery-7-tablet@1x.jpg 1x, img/images/gallery/gallery-7-tablet@2x.jpg 2x"
                 width="253" height="418">
               <img class="gallery__swiper-image" src="img/images/gallery/gallery-1-mobile@1x.jpg"
-                srcset="img/images/gallery/gallery-7-mobile@2x.jpg" width="158" height="266"
-                alt="Турист на вершине горы">
+                srcset="img/images/gallery/gallery-7-mobile@2x.jpg" width="158" height="266" alt="Туристы в лесу">
             </picture>
           </div>
 
@@ -993,44 +992,101 @@
   </main>
   <footer class="footer" data-test="footer">
     <div class="container">
-      <h2 class="visually-hidden">footer</h2>
-      <a class="footer__logo" href="index.html">
-        <img class="footer__logo-image" src="img/images/logotype-black.svg" width="142" height="42"
-          alt="логотип Lifetour">
-      </a>
-      <nav class="footer__navigation">
-        <ul class="footer__navigation-list">
-          <li class="footer__navigation-item">
-            <a class="footer__navigation-link" href="#tours">
-              Туры
-            </a>
-          </li>
-          <li class="footer__navigation-item">
-            <a class="footer__navigation-link" href="#training">
-              Обучение
-            </a>
-          </li>
-          <li class="footer__navigation-item">
-            <a class="footer__navigation-link" href="#about">
-              О нас
-            </a>
-          </li>
-          <li class="footer__navigation-item">
-            <a class="footer__navigation-link" href="#reviews">
-              Отзывы
-            </a>
-          </li>
-          <li class="footer__navigation-item">
-            <a class="footer__navigation-link" href="#gallery">
-              Фотографии
-            </a>
-          </li>
-          <li class="footer__navigation-item">
-            <a class="footer__navigation-link" href="#footer">
-              Контакты
-            </a>
-          </li>
-        </ul>
+      <section class="contacts">
+        <div class="contacts__content-wrapper">
+          <h2 class="contacts__heading" data-heading="Контакты">Контакты</h2>
+          <p>Свяжитесь с нами любым удобным для вас способом или приходите к нам в гости. Мы будем рады поделиться
+            увлекательными историями и подобрать для вас тур.</p>
+          <ul class="contacts__list">
+            <li class="contacts__list-item contacts__list-phone">
+              <h3 class="contacts__list-title">Телефон:</h3>
+              <a class="contacts__list-description contacts__list-description-phone" href="tel:+79837454545">
+                +7 983 745-45-45
+                <span class="visually-hidden">телефон для связи</span>
+              </a>
+            </li>
+
+            <li class="contacts__list-item contacts__list-email">
+              <h3 class="contacts__list-title">Email:</h3>
+              <a class="contacts__list-description contacts__list-description-email" href="mailto:info@lifetour.com">
+                info@lifetour.com
+                <span class="visually-hidden">отправить письмо</span>
+              </a>
+            </li>
+
+            <li class="contacts__list-item contacts__list-address">
+              <h3 class="contacts__list-title">Адрес:</h3>
+              <p class="contacts__list-description">г. Москва, пр-т Мира, д. 14, офис 101</p>
+            </li>
+          </ul>
+        </div>
+        <picture>
+          <source type="image/webp" media="(min-width: 1440px)"
+            srcset="img/images/contacts-map-desktop@1x.webp 1x, img/images/contacts-map-desktop@2x.webp 2x" width="600"
+            height="324">
+          <source type="image/webp" media="(min-width: 768px)"
+            srcset="img/images/contacts-map-tablet@1x.webp 1x, img/images/contacts-map-tablet@2x.webp 2x" width="768"
+            height="340">
+          <source type="image/webp"
+            srcset="img/images/contacts-map-mobile@1x.webp 1x, img/images/contacts-map-mobile@2x.webp 2x" width="320"
+            height="343">
+
+          <source type="image/png" media="(min-width: 1440px)"
+            srcset="img/images/contacts-map-desktop@1x.png 1x, img/images/contacts-map-desktop@2x.png 2x" width="600"
+            height="324">
+          <source type="image/png" media="(min-width: 768px)"
+            srcset="img/images/contacts-map-tablet@1x.png 1x, img/images/contacts-map-tablet@2x.png 2x" width="768"
+            height="340">
+          <img class="contacts__image" src="img/images/contacts-map-mobile@1x.jpg"
+            srcset="img/images/contacts-map-mobile@2x.png" width="320" height="343" alt="мы на карте">
+        </picture>
+      </section>
+
+      <section class="footer-main">
+        <h2 class="visually-hidden">Подвал сайта</h2>
+        <div class="footer-main__wrapper">
+          <a class="footer__logo" href="index.html">
+            <img class="footer__logo-image" src="img/images/logotype-black.svg" width="142" height="42"
+              alt="логотип Lifetour">
+          </a>
+          <nav class="footer__navigation" aria-label="Навигация сайта">
+            <ul class="footer__navigation-list">
+              <li class="footer__navigation-item">
+                <a class="footer__navigation-link" href="#tours">
+                  Туры
+                </a>
+              </li>
+              <li class="footer__navigation-item">
+                <a class="footer__navigation-link" href="#training">
+                  Обучение
+                </a>
+              </li>
+              <li class="footer__navigation-item">
+                <a class="footer__navigation-link" href="#about">
+                  О нас
+                </a>
+              </li>
+              <li class="footer__navigation-item">
+                <a class="footer__navigation-link" href="#reviews">
+                  Отзывы
+                </a>
+              </li>
+              <li class="footer__navigation-item">
+                <a class="footer__navigation-link" href="#gallery">
+                  Фотографии
+                </a>
+              </li>
+              <li class="footer__navigation-item">
+                <a class="footer__navigation-link" href="#footer">
+                  Контакты
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <a class="footer__phone" href="tel:88000000000">8 800 000-00-00
+            <span class="visually-hidden">Телефон компании</span>
+          </a>
+        </div>
         <ul class="footer__social social-list">
           <li class="social-list__item">
             <a class="social-list__link social-list__link--vk" href="https://htmlacademy.ru/" target="_blank"
@@ -1051,10 +1107,11 @@
             </a>
           </li>
         </ul>
-      </nav>
-      <a class="footer__phone" href="tel:88000000000">8 800 000-00-00
-        <span class="visually-hidden">Телефон компании</span>
-      </a>
+
+        <a class="footer__privacy" href="#">Политика конфиденциальности
+          <span class="visually-hidden">Ознакомиться с политикой конфиденциальности</span>
+        </a>
+      </section>
 
     </div>
   </footer>

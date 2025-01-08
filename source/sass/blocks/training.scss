@@ -53,7 +53,6 @@
   text-align: left;
   margin: 0 0 25px;
   padding: 0;
-
 }
 
 .training__swiper-container {
@@ -63,7 +62,7 @@
 
 
 .training__slide.swiper-slide {
-  border: 1px solid #0266C11A;
+  border: 1px solid #0266c11a;
   padding: 15px;
   display: flex;
   flex-direction: column;
@@ -121,7 +120,6 @@
   &:active {
     background-color: $primary-blue;
     border-color: $primary-blue;
-
   }
 
   &::before {
@@ -177,7 +175,7 @@
     background-color: $primary-blue;
     left: 6px;
     height: calc((100%) - 22px);
-    margin: 11px 0 0 0;
+    margin: 11px 0 0;
 
     @media (min-width: $tablet-width) {
       display: none;
@@ -223,9 +221,10 @@
     font-size: 18px;
     line-height: 18px;
   }
+
   @media (min-width: $tablet-width) {
-font-size: 21px;
-line-height: 21px;
+    font-size: 21px;
+    line-height: 21px;
   }
 }
 
@@ -326,7 +325,6 @@ line-height: 21px;
   @media (min-width: $tablet-width) {
     left: 0;
   }
-
 }
 
 .training__process-item--ecology::after {
@@ -342,7 +340,6 @@ line-height: 21px;
   @media (min-width: $tablet-width) {
     left: 0;
   }
-
 }
 
 .training__process-item--obstacles::after {
@@ -358,7 +355,6 @@ line-height: 21px;
   @media (min-width: $tablet-width) {
     left: 0;
   }
-
 }
 
 .training .training__process-description {
@@ -378,7 +374,6 @@ line-height: 21px;
     font-size: 16px;
     line-height: 24px;
   }
-
 }
 
 .training__process-item--obstacles .training__process-description {

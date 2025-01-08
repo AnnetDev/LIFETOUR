@@ -25,6 +25,7 @@
     justify-content: flex-end;
   }
 }
+
 .swiper-button-next,
 .swiper-button-prev {
   display: flex;
@@ -36,7 +37,6 @@
   align-items: center;
   justify-content: center;
   transition: background-color 0.3s ease;
-
 }
 
 .swiper-button-next {
@@ -68,7 +68,7 @@
 .swiper-button-prev:focus::before,
 .swiper-button-next:focus-within::before,
 .swiper-button-prev:focus-within::before {
-  background-color: #1C3374;
+  background-color: #1c3374;
 }
 
 .swiper-button-next:active::before,

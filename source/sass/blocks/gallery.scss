@@ -1,13 +1,13 @@
 .gallery {
-  padding: 36px 0 3px 0;
+  padding: 36px 0 3px;
 
   @media (min-width: $tablet-width) {
-    padding: 60px 0 3px 0;
+    padding: 60px 0 3px;
     position: relative;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 119px 0 3px 0;
+    padding: 119px 0 3px;
   }
 }
 
@@ -73,7 +73,6 @@
     line-height: 24px;
     margin: 0 0 46px;
     width: 592px;
-
   }
 }
 
@@ -89,7 +88,6 @@
   @media (min-width: $desktop-width) {
     height: 463px;
     display: flex;
-
   }
 }
 
@@ -98,6 +96,7 @@
   flex-direction: column;
   justify-content: space-between;
   gap: 7px;
+
   // @media (min-width: $desktop-width) {
   // display: block;
   // }
@@ -133,11 +132,10 @@
 }
 
 @media (min-width: $desktop-width) {
-
   .gallery__wrapper.swiper-wrapper {
     display: flex;
     flex-direction: row;
-    gap: 5px
+    gap: 5px;
   }
 
 

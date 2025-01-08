@@ -37,12 +37,14 @@
     @media (min-width: $tablet-width) {
       font-size: 40px;
       line-height: 40px;
+
       // margin: 0 0 46px;
     }
 
     @media (min-width: $desktop-width) {
       font-size: 55px;
       line-height: 55px;
+
       // margin: 0 0 57px;
     }
   }
@@ -95,7 +97,6 @@
       top: 30px;
       width: 48px;
       height: 48px;
-
     }
 
     @media (min-width: $desktop-width) {
@@ -138,7 +139,6 @@
     font-size: 16px;
     line-height: 16px;
     margin: 73px 0 0;
-
   }
 
   @media (min-width: $desktop-width) {
@@ -175,6 +175,7 @@
     bottom: 0;
     right: 50%; // to change
     z-index: 1;
+
     // justify-content: flex-end;
   }
 }
