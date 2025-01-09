@@ -1,10 +1,12 @@
 .reviews {
   margin: 0;
+  padding: 36px 0 20px;
+
   @media (min-width: $tablet-width) {
-    padding: 60px 0;
+    padding: 60px 0 60px;
   }
-  @media (min-width: $tablet-width) {
-    padding: 145px 0;
+  @media (min-width: $desktop-width) {
+    padding: 145px 0 70px;
   }
 }
 .reviews__slide.swiper-slide.swiper-slide-active,
@@ -13,16 +15,19 @@
   box-shadow: 0 0 20px 0 rgba(28, 51, 116, 0.1);
 
   // border: 1px solid red;
-  padding: 20px;
+  padding: 20px 20px 0 20px;
+  // padding: 20px;
   display: flex;
   flex-flow: column wrap;
-  gap: 20px;
+  // gap: 20px;
   max-width: 290px;
 
   @media (min-width: $tablet-width) {
     flex-flow: row nowrap;
+    padding: 20px 30px 0 20px;
     gap: 30px;
     box-shadow: 0 0 30px 0 rgba(28, 51, 116, 0.1);
+    width: 565px;
     max-width: 565px;
   }
 
@@ -32,8 +37,53 @@
   }
 }
 
+.reviews__swiper-heading {
+  margin: 0 0 17px;
+  padding: 0;
+font-size: 22px;
+font-weight: 800;
+line-height: 22px;
+text-align: left;
+position: relative;
+
+  &::before {
+    position: absolute;
+    content: attr(data-heading);
+    font-size: 26px;
+    line-height: 26px;
+    text-align: left;
+    opacity: 3%;
+    top: -12px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 40px;
+      line-height: 40px;
+      top: -17px;
+    }
+
+    @media (min-width: $desktop-width) {
+      font-size: 55px;
+      line-height: 55px;
+      top: -38px;
+    }
+  }
+  @media (min-width: $tablet-width) {
+    font-size: 25px;
+    line-height: 25px;
+    margin: 0 0 10px;
+
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 35px;
+    line-height: 35px;
+    margin: 0 0 18px;
+  }
+}
+
 .reviews__swiper-image {
   display: block;
+  margin-bottom: 20px;
 }
 
 .reviews p {
@@ -57,7 +107,7 @@
 }
 
 .reviews p:first-of-type {
-  margin-bottom: 15px; //?
+  margin-bottom: 10px; //?
 }
 
 .reviews p:last-of-type {
@@ -68,7 +118,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 24px; //?
+    margin-bottom: 4px; //?
   }
 }
 
@@ -77,16 +127,18 @@
   flex-flow: column wrap;
 
   @media (min-width: $tablet-width) {
-    width: 294px;
+    margin-top: 4px;
+    width: 299px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 442px;
+    width: 362px;
+    margin-top: -2px;
   }
 }
 
 .reviews__author-name {
-  margin: 0;
+  margin: 0 0 8px;
   padding: 0;
   font-size: 12px;
   font-weight: 700;
@@ -94,15 +146,19 @@
   text-align: left;
 
   @media (min-width: $tablet-width) {
+    margin: 0 0 7px;
     font-size: 13px;
     line-height: 13px;
   }
+  @media (min-width: $desktop-width) {
+
+  margin: 0 0 8px;}
+
 }
 
-.reviews__author-details {
+.reviews__author p:last-of-type {
   margin: 0;
   padding: 0;
-
   font-size: 12px;
   font-weight: 300;
   line-height: 12px;
@@ -141,14 +197,15 @@
     content: "";
     width: 100px;
     height: 20px;
-    top: -60px;
-    right: 45px; // to change
+    top: -35px;
+    right: 45px;
     z-index: 1;
     justify-content: flex-end;
   }
 
   @media (min-width: $desktop-width) {
-    right: 120px; // to change
+    right: 120px;
+    top: -53px;
   }
 }
 
@@ -164,10 +221,10 @@
   padding: 15px;
 
   @media (min-width: $tablet-width) {
-    padding: 25px;
+    padding: 25px 25px 25px 45px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 20px 20px 20px 120px;
+    padding: 20px 20px 20px 130px;
   }
 }

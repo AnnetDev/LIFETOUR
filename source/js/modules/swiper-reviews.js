@@ -12,9 +12,11 @@ export function initializeReviewsSwiper() {
       nextEl: '.reviews__button.swiper-button-next',
       prevEl: '.reviews__button.swiper-button-prev',
     },
+    slidesPerGroup: 1,
     breakpoints: {
       320: {
         slidesPerView: 1,
+        spaceBetween: 20, //?
       },
       768: {
         slidesPerView: 1.2,
