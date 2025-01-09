@@ -1,13 +1,13 @@
 .training {
   margin: 0;
-  padding: 37px 0;
+  padding: 37px 0 20px 0;
 
   @media (min-width: $tablet-width) {
-    padding: 60px 0;
+    padding: 60px 0 41px 0;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 63px 0;
+    padding: 63px 0 40px 0;
   }
 }
 

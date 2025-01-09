@@ -1,3 +1,12 @@
+.reviews {
+  margin: 0;
+  @media (min-width: $tablet-width) {
+    padding: 60px 0;
+  }
+  @media (min-width: $tablet-width) {
+    padding: 145px 0;
+  }
+}
 .reviews__slide.swiper-slide.swiper-slide-active,
 .reviews__slide.swiper-slide {
   all: unset;
