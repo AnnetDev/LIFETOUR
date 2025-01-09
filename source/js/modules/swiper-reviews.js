@@ -13,14 +13,18 @@ export function initializeReviewsSwiper() {
       prevEl: '.reviews__button.swiper-button-prev',
     },
     slidesPerGroup: 1,
+    // centeredSlides: true,
+
     breakpoints: {
       320: {
         slidesPerView: 1,
-        spaceBetween: 20, //?
+        spaceBetween: 15, //?
+        centeredSlides: true,
       },
       768: {
         slidesPerView: 1.2,
         spaceBetween: 30, //?
+        slidesOffsetAfter: 30,
       },
       1440: {
         slidesPerView: 1.8,
@@ -29,3 +33,4 @@ export function initializeReviewsSwiper() {
     },
   });
 }
+
