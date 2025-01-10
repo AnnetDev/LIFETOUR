@@ -1,8 +1,8 @@
 .gallery {
-  padding: 36px 0 3px;
+  padding: 36px 0 2px;
 
   @media (min-width: $tablet-width) {
-    padding: 60px 0 3px;
+    padding: 60px 0 4px;
     position: relative;
   }
 
@@ -95,7 +95,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 7px;
+  // gap: 6px;
 
   // @media (min-width: $desktop-width) {
   // display: block;
@@ -103,7 +103,7 @@
 }
 
 .gallery__swiper-image {
-  display: block;
+  display: flex;
   margin: 0;
   padding: 0;
 }
