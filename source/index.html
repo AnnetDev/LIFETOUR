@@ -328,7 +328,8 @@
       <div class="container">
         <h2 class="training__heading" data-heading="Обучение">Обучение</h2>
         <p>
-          Обучение проводится квалифицированными специалистами, за&nbsp;плечами&nbsp;которых десятки пройденных маршрутов Кавказа,
+          Обучение проводится квалифицированными специалистами, за&nbsp;плечами&nbsp;которых десятки пройденных
+          маршрутов Кавказа,
           Крыма, Гималаев, Эльбруса, Алтая, Карелии, Адыгеи и других.
         </p>
         <h2 class="training__swiper-heading">Наши инструкторы</h2>
@@ -540,7 +541,8 @@
           </h3>
           <p>
             В далёком 2000 году мы начали заниматься туризмом — походы, поездки, восхождения, нам это настолько
-            понравилось, что мы этим стали жить. Спустя&nbsp;5&nbsp;лет, в 2005 году мы основали компанию, чтобы показывать
+            понравилось, что мы этим стали жить. Спустя&nbsp;5&nbsp;лет, в 2005 году мы основали компанию,
+            чтобы показывать
             людям
             удивительные места нашей страны.
           </p>
@@ -973,16 +975,21 @@
         <form action="https://echo.htmlacademy.ru">
           <fieldset class="form__fieldset">
             <legend class="visually-hidden">Отправить заявку на для консультацию</legend>
-            <label class="form__label">
-              <span class="visually-hidden">Телефон</span>
-              <input class="form__input form__input-phone" type="tel" name="input-phone" placeholder="Телефон"
+
+            <div class="form__group">
+              <!-- <span class="visually-hidden">Телефон</span> -->
+              <input class="form__input form__input-phone" type="tel" name="phone" placeholder="+7 (000)-000-00-00"
                 id="input-phone" required>
-            </label>
-            <label class="form__label">
-              <span class="visually-hidden">Email</span>
-              <input class="form__input form__input-name" type="text" name="input-email" placeholder="Email"
-                id="input-email" required>
-            </label>
+              <label class="form__label" for="input-phone">Телефон</label>
+            </div>
+
+            <div class="form__group">
+              <!-- <span class="visually-hidden">Email</span> -->
+              <input class="form__input form__input-name" type="text" name="email" placeholder="example@почта.рф" id="input-email"
+                required>
+              <label class="form__label" for="input-email">Email</label>
+            </div>
+            <!-- placeholder="Email" -->
             <button class="button form__button" type="submit">Отправить</button>
           </fieldset>
         </form>
@@ -1016,7 +1023,8 @@
 
             <li class="contacts__list-item contacts__list-address">
               <h3 class="contacts__list-title">Адрес:</h3>
-              <p class="contacts__list-description contacts__list-description-address">г. Москва, пр-т Мира, д. 14, офис 101</p>
+              <p class="contacts__list-description contacts__list-description-address">г. Москва, пр-т Мира, д. 14, офис
+                101</p>
             </li>
           </ul>
         </div>

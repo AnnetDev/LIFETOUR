@@ -10,6 +10,7 @@ import { initializeTrainingSwiper } from './modules/swiper-trainers';
 import { initializeReviewsSwiper } from './modules/swiper-reviews';
 import { initializeAdvSwiper } from './modules/swiper-adv';
 import { initializeGalleySwiper } from './modules/swiper-gallery';
+import { formValidator } from './modules/form-validate';
 
 
 toggleMenu();
@@ -19,3 +20,4 @@ initializeTrainingSwiper();
 initializeReviewsSwiper();
 initializeAdvSwiper();
 initializeGalleySwiper();
+formValidator();

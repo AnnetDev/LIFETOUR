@@ -115,6 +115,14 @@
   margin: 0;
   border-radius: 2px;
   border: none;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: left;
+  color: $primary-dark;
+  transition: all 0.3s ease;
+  outline: none;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     min-height: 56px;
@@ -139,8 +147,19 @@
     width: 180px;
   }
 }
+.form__input:hover {
+  outline: 1px solid $primary-blue;
+}
 
 .form__input::placeholder {
+  opacity: 0;
+}
+
+.form__input:focus {
+  outline: 1px solid $primary-dark;
+}
+
+.form__input:focus::placeholder {
   font-size: 16px;
   font-weight: 400;
   line-height: 16px;
@@ -150,11 +169,53 @@
   transition: all 0.3s ease;
 }
 
-.form__input {
+.form__input:disabled {
+  pointer-events: none;
+  outline: 1px solid #999999;
+}
+
+.form__input--error {
+  outline: 1px solid #ff121f;
+}
+
+.form__group {
+  position: relative;
+}
+
+.form__label {
+  position: absolute;
+  content: "";
   font-size: 16px;
   font-weight: 400;
   line-height: 16px;
   text-align: left;
   color: $primary-dark;
+  opacity: 50%;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
   transition: all 0.3s ease;
+  pointer-events: none;
+
+  @media (min-width: $tablet-width) {
+    left: 30px;
+  }
+}
+
+.form__input:focus + .form__label,
+.form__input:focus-visible + .form__label,
+// .form__input:focus-within + .form__label,
+.form__input:not(:placeholder-shown) + .form__label {
+  opacity: 0;
+}
+
+.form__error-message {
+  position: absolute;
+  color: #ff121f;
+  font-size: 14px;
+  line-height: 22px;
+  top: 100%;
+  left: 0;
+  margin-top: 4px;
+  width: max-content;
 }
