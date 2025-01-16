@@ -1,5 +1,5 @@
 import Swiper from 'swiper';
-import { Pagination, Keyboard } from 'swiper/modules';
+import { Pagination, Keyboard, A11y, EffectCreative } from 'swiper/modules';
 import 'swiper/scss';
 
 export function initializeHeroSwiper() {
@@ -9,14 +9,26 @@ export function initializeHeroSwiper() {
   }
 
   const swiper = new Swiper(heroSwiperContainer, {
-    modules: [Pagination, Keyboard],
+    modules: [Pagination, Keyboard, A11y, EffectCreative],
     loop: true,
     loopedSlides: 3,
     effect: 'creative',
-    slidesPerView: 1,
+    creativeEffect: {
+      prev: {
+        shadow: true,
+        translate: ['-20%', 0, -1],
+      },
+      next: {
+        translate: ['100%', 0, 0],
+      },
+    }, slidesPerView: 1,
     keyboard: {
       enabled: true,
       onlyInViewport: true,
+    },
+    a11y: {
+      enabled: true,
+      focusableElements: 'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])',
     },
     pagination: {
       el: '.swiper-pagination',
@@ -24,77 +36,22 @@ export function initializeHeroSwiper() {
       renderBullet: (index, className) =>
         `<div class="${className}" tabindex="0" role="button" aria-label="Перейти к слайду ${index + 1}"></div>`,
     },
-    on: {
-      init: () => updateAccessibility(),
-      slideChangeTransitionEnd: () => updateAccessibility(),
-    },
   });
 
-  function updateAccessibility() {
-    const slides = heroSwiperContainer.querySelectorAll('.hero-swiper-slide .swiper-slide');
-    const paginationBullets = heroSwiperContainer.querySelectorAll('.swiper-pagination .swiper-pagination-bullet');
+  // Handle focus issue and ensure proper slide transition when tabbing
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Tab') {
+      const focusedElement = document.activeElement;
+      const swiperElement = document.querySelector('.hero__swiper');
 
-    slides.forEach((slide, index) => {
-      const isActive = index === swiper.realIndex;
-      const links = slide.querySelectorAll('a');
+      if (focusedElement && swiperElement) {
+        const slide = focusedElement.closest('.swiper-slide');
 
-      slide.setAttribute('aria-hidden', !isActive);
-
-      links.forEach((link) => {
-        link.setAttribute('tabindex', isActive ? '0' : '-1');
-      });
-
-      links.forEach((link) => {
-        link.removeEventListener('focus', focusHandler);
-        link.addEventListener('focus', focusHandler);
-      });
-
-      function focusHandler() {
-        if (!isActive) {
-          swiper.slideTo(index);
+        if (slide) {
+          const slideIndex = Array.from(slide.parentElement.children).indexOf(slide);
+          swiper.slideTo(slideIndex, 300, true);
         }
       }
-    });
-
-    paginationBullets.forEach((bullet) => {
-      bullet.setAttribute('tabindex', '0');
-    });
-  }
-
-  heroSwiperContainer.querySelector('.swiper-pagination').addEventListener('focus', () => {
-    swiper.slideTo(swiper.realIndex);
+    }
   });
 }
-
-
-// import Swiper from 'swiper';
-// import { Pagination, EffectCreative, Navigation } from 'swiper/modules';
-// import 'swiper/scss';
-
-// export function initializeHeroSwiper() {
-//   new Swiper('.hero__swiper', {
-//     modules: [Pagination, EffectCreative, Navigation],
-//     loop: true,
-//     effect: 'creative',
-//     creativeEffect: {
-//       prev: {
-//         shadow: true,
-//         translate: ['-20%', 0, -1],
-//       },
-//       next: {
-//         translate: ['100%', 0, 0],
-//       },
-//     },
-//     normalizeSliderIndex: true,
-//     slidesPerView: 1,
-//     pagination: {
-//       el: '.swiper-pagination',
-//       clickable: true,
-//       renderBullet: function (index, className) {
-//         return `<div class="${className}" tabindex="1" role="button" aria-label="Перейти к слайду ${index + 1}"></div>`;
-//       }
-//     },
-//   });
-// }
-
-//разобраться с фокусом и переключением слайдов

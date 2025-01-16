@@ -106,3 +106,13 @@
   cursor: not-allowed;
   pointer-events: none;
 }
+
+.swiper-slide:focus-within {
+  /* Ensure the slide with focused element is fully visible */
+  scroll-margin: 1rem;
+}
+
+/* Prevent unwanted scroll behavior */
+.swiper-wrapper {
+  scroll-behavior: auto;
+}
