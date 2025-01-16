@@ -91,10 +91,11 @@
   display: flex;
   flex-direction: column;
   border: 1px solid hsla(209, 98%, 38%, 0.1);
+  background-color: $primary-white;
   padding: 20px 9px 19px;
   align-items: center;
   width: 290px;
-  height: auto; // или фиксированную
+  height: auto;
 
   @media (min-width: $tablet-width) {
     padding: 30px 19px 29px;

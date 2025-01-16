@@ -1,6 +1,9 @@
+main {
+  overflow: hidden;
+}
 .main-container {
   flex-grow: 1;
-  overflow: hidden;
+  overflow: visible;
 
   position: relative;
   min-width: 320px;
@@ -10,10 +13,10 @@
   &::before {
     position: absolute;
     content: "";
-    width: 346px;
-    height: 595px;
+    width: 1175px;
+    height: 790px;
     top: 577px;
-    left: 77px;
+    left: 179px;
     z-index: -1;
     background-image:
       image-set(url("../../img/images/clouds-mobile@1x.webp") 1x,
@@ -33,10 +36,10 @@
           url("../../img/images/clouds-tablet@2x.png") 2x,
         );
 
-      width: 840px;
-      height: 1630px;
+      width: 3047px;
+      height: 3531px;
       top: 942px;
-      left: 116px;
+      left: -661px;
     }
 
     @media (min-width: $desktop-width) {
@@ -47,11 +50,10 @@
           url("../../img/images/clouds-desktop@2x.png") 2x,
         );
 
-      width: 1440px;
+      width: 3196px;
       height: 3290px;
       top: 674px;
-      left: 0;
-      // left: 704px;
+      left: -312px;
     }
   }
 
@@ -62,28 +64,4 @@
   @media (min-width: $desktop-width) {
     max-width: 1440px;
   }
-
-  // &::after {
-  //   @media (min-width: $desktop-width) {
-  //     position: absolute;
-  //     content: "";
-  //     z-index: -10;
-  //     background-image:
-  //       image-set(url("../../img/images/clouds-desktop2@1x.webp") 1x,
-  //         url("../../img/images/clouds-desktop2@2x.webp") 2x,
-  //         url("../../img/images/clouds-desktop2@1x.png") 1x,
-  //         url("../../img/images/clouds-desktop2@2x.png") 2x,
-  //       );
-  //     background-repeat: no-repeat;
-  //     background-size: auto;
-  //     background-position: center top;
-
-
-  //     width: 1440px;
-  //     height: 447px;
-  //     top: 3517px;
-  //     border: 2px solid red;
-  //     // left: 704px;
-  //   }
-  // }
 }
