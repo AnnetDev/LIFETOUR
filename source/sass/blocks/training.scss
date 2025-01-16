@@ -1,13 +1,13 @@
 .training {
   margin: 0;
-  padding: 37px 0 20px 0;
+  padding: 37px 0 20px;
 
   @media (min-width: $tablet-width) {
-    padding: 60px 0 41px 0;
+    padding: 60px 0 41px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 63px 0 65px 0;
+    padding: 63px 0 65px;
   }
 }
 
@@ -49,7 +49,6 @@
     font-size: 35px;
     line-height: 35px;
   }
-
 }
 
 .training p {
@@ -97,7 +96,6 @@
     line-height: 35px;
     margin: 0 0 15px;
   }
-
 }
 
 .training__swiper-container {
@@ -111,7 +109,7 @@
 
 
 .training__slide.swiper-slide {
-  border: 1px solid #0266c11a;
+  border: 1px solid rgba(2, 102, 193, 0.1);
   padding: 15px 16px;
   display: flex;
   flex-direction: column;
@@ -365,9 +363,11 @@
   @media (min-width: $tablet-width) {
     grid-row: 2;
   }
+
   @media (min-width: $desktop-width) {
     // width: 235px;
     padding-right: 15px;
+
     &::before {
       left: -10px;
     }
@@ -412,6 +412,7 @@
   @media (min-width: $tablet-width) {
     left: 0;
   }
+
   @media (min-width: $desktop-width) {
     top: 2px;
   }
@@ -430,6 +431,7 @@
   @media (min-width: $tablet-width) {
     left: 0;
   }
+
   @media (min-width: $desktop-width) {
     top: 2px;
   }
@@ -448,6 +450,7 @@
   @media (min-width: $tablet-width) {
     left: 0;
   }
+
   @media (min-width: $desktop-width) {
     top: 2px;
   }

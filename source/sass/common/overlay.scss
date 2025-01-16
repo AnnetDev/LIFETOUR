@@ -7,12 +7,7 @@
   height: 100%;
   background: rgba(45, 56, 63, 0.6);
   z-index: 2;
-// overflow-y: hidden;  // mix-blend-mode:inherits;
-  // mix-blend-mode: screen;
-  // will-change: background, transform;
 }
-
-//doesnt work
 
 .overlay-no-scroll {
   overflow: hidden;

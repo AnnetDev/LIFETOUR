@@ -18,7 +18,7 @@
   line-height: 22px;
   font-weight: 800;
   text-align: left;
-  margin: 2px 0 39px;
+  margin: 3px 0 39px;
   padding: 0;
   position: relative;
 
@@ -26,12 +26,15 @@
     font-size: 25px;
     line-height: 25px;
     margin: 0 0 35px;
+    max-width: 578px;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 35px;
     line-height: 35px;
     margin: 0 0 50px;
+    max-width: 878px;
+
   }
 
   &::before {
@@ -340,7 +343,7 @@
   display: flex;
   margin-top: 4px;
   gap: 1px;
-  width: 84pxs;
+  width: 84px;
 }
 
 .tours__level-star {

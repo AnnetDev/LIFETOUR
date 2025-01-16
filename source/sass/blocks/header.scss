@@ -18,15 +18,11 @@
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: flex-start;
-  gap: 15px 0;
+  gap: 15px 10px;
 
   @media (min-width: $tablet-width) {
     align-items: center;
   }
-
-  // @media (min-width: $desktop-width) {
-  //   padding: 10px 0;
-  // }
 }
 
 .header__toggle {
@@ -38,13 +34,8 @@
   background-color: inherit;
   border: none;
   display: block;
-
-  // border: solid 1px red;
-  // mask-image: url("/__spritemap#sprite-menu-view");
-  // mask-size: contain;
   position: relative;
-  transition: transform 0.3s ease; //dosnt work
-  //mask dosnt work
+  transition: transform 0.3s ease;
 
   @media (max-width: $mobile-width-only) {
     margin-right: 122px;
@@ -83,16 +74,12 @@
   &--opened::before {
     transform: rotate(45deg);
     top: 50%;
-
-    // transform: translateY(-50%);
     width: 22px;
   }
 
   &--opened::after {
     transform: rotate(-45deg);
     top: 50%;
-
-    // transform: translateY(-50%);
     width: 22px;
   }
 }
@@ -101,17 +88,6 @@
   margin: 0;
   padding: 0;
   display: block;
-
-  // background-image: url("/source/img/sprite/menu.svg");
-  // mask-size: contain;
-  // mask-repeat: no-repeat;
-  // z-index: 2;
-  // mask-size: contain;
-  //   -webkit-mask: url("/__spritemap#sprite-menu-view") center no-repeat;
-  // -webkit-mask-size: contain;
-
-  // width: 100%;
-  // height: 100%;
   position: absolute;
   content: "";
   width: 17px;
@@ -121,7 +97,6 @@
   transform: translateY(-50%);
   left: 0;
   transition: display 0.3s ease;
-
 
   &--opened {
     display: none;
@@ -133,13 +108,26 @@
   display: block;
   margin: 0;
   padding: 0;
+  transition: all 0.3s ease;
+
   @media (min-width: $tablet-width) {
-    margin: 0 0 0 1px;}
+    margin: 0 0 0 1px;
+  }
 
   @media (min-width: $desktop-width) {
     margin: 0;
     margin-left: 32px;
     margin-right: 30px;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 40%;
+    outline: none;
+  }
+
+  &:active {
+    opacity: 70%;
   }
 }
 
@@ -148,7 +136,7 @@
 }
 
 .header__phone {
-  margin: 0;
+  margin: 0 0 0 auto;
   padding: 0;
   text-decoration: none;
   color: $primary-white;
@@ -157,21 +145,19 @@
   line-height: 14px;
   text-align: right;
   cursor: pointer;
-  margin-left: auto;
   transition: all 0.3s ease;
 
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 16px;
-    margin-left: 0;
-    margin: 3px 0 0;
+    margin: 3px 0 0 0;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 18px;
     line-height: 18px;
-    margin: 0;
+    margin: 1px 0 0 0;
   }
 
   &:hover {

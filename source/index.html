@@ -74,22 +74,11 @@
   </header>
 
   <main class="main-container">
-
-    <!-- пример использования спрайта -->
-    <!-- <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
-    <svg>
-      <use href="/__spritemap#sprite-user"></use>
-    </svg> -->
-    <!-- примеры требуемых атрибутов data-test="*" -->
     <section class="hero" data-test="hero">
-      <!-- <div class="container"> -->
       <h1 class="visually-hidden">Lifetour. Организация походов в горы</h1>
-      <!-- Slider main container -->
       <div class="hero__swiper swiper">
-        <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
-          <!-- Slides -->
-          <div class="swiper-slide">
+          <div class="swiper-slide hero-swiper-slide">
             <picture>
               <source type="image/webp" media="(min-width: 1440px)"
                 srcset="img/images/Caucasus-desktop@1x.webp 1x, img/images/Caucasus-desktop@2x.webp 2x" width="1440"
@@ -122,7 +111,7 @@
               </div>
             </div>
           </div>
-          <div class="swiper-slide">
+          <div class="swiper-slide hero-swiper-slide">
             <picture>
               <source type="image/webp" media="(min-width: 1440px)"
                 srcset="img/images/Kamchatka-desktop@1x.webp 1x, img/images/Kamchatka-desktop@2x.webp 2x" width="1440"
@@ -154,7 +143,7 @@
               </div>
             </div>
           </div>
-          <div class="swiper-slide">
+          <div class="swiper-slide hero-swiper-slide">
             <picture>
               <source type="image/webp" media="(min-width: 1440px)"
                 srcset="img/images/Altai-desktop@1x.webp 1x, img/images/Altai-desktop@2x.webp 2x" width="1440"
@@ -188,7 +177,7 @@
         <div class="swiper-pagination"></div>
       </div>
     </section>
-    <section class="tours" data-test="tours">
+    <section class="tours" data-test="tours" id="tours">
       <div class="container">
         <h2 class="tours__heading" data-heading="Ближайшие туры">Ближайшие туры</h2>
         <div class="tours__swiper-container">
@@ -324,7 +313,7 @@
       </div>
     </section>
 
-    <section class="training" data-test="training">
+    <section class="training" data-test="training" id="training">
       <div class="container">
         <h2 class="training__heading" data-heading="Обучение">Обучение</h2>
         <p>
@@ -334,10 +323,12 @@
         </p>
         <h2 class="training__swiper-heading">Наши инструкторы</h2>
         <div class="training__swiper-container">
+          <div class="training__swiper-navigation swiper-navigation">
+            <div class="training__button swiper-button-prev button"></div>
+            <div class="training__button swiper-button-next button"></div>
+          </div>
           <div class="training__swiper swiper">
-            <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
-              <!-- Slides -->
               <div class="training__slide swiper-slide">
                 <picture>
                   <source type="image/webp" media="(min-width: 1440px)"
@@ -487,15 +478,11 @@
               </div>
             </div>
           </div>
-          <div class="training__swiper-navigation swiper-navigation">
-            <div class="training__button swiper-button-prev button"></div>
-            <div class="training__button swiper-button-next button"></div>
-          </div>
+
         </div>
 
         <h3 class="training__process-title">Процесс обучения</h3>
         <ul class="training__process training__process-wrapper">
-          <!-- <div class="training__process-wrapper"> -->
           <li class="training__process-item training__process-item--map">
             <p class="training__process-description">Изучение спортивного туристского&nbsp;движения</p>
           </li>
@@ -508,13 +495,12 @@
           <li class="training__process-item training__process-item--obstacles">
             <p class="training__process-description">Разъяснение сложности горных препятствий</p>
           </li>
-          <!-- </div> -->
         </ul>
       </div>
 
     </section>
 
-    <section class="about" data-test="about">
+    <section class="about" data-test="about" id="about">
       <div class="about__image-wrapper">
         <picture>
           <source type="image/webp" media="(min-width: 1440px)"
@@ -559,7 +545,7 @@
       </div>
     </section>
 
-    <section class="reviews" data-test="reviews">
+    <section class="reviews" data-test="reviews" id="reviews">
       <div class="container">
         <h2 class="reviews__swiper-heading" data-heading="Отзывы">Отзывы</h2>
       </div>
@@ -742,9 +728,7 @@
       <div class="container advantages__container">
         <h2 class="advantages__heading" data-heading="Преимущества">Преимущества</h2>
         <div class="advantages__swiper swiper">
-          <!-- Additional required wrapper -->
           <div class="advantages__list swiper-wrapper">
-            <!-- Slides -->
             <div class="advantages__item advantages__item--safety swiper-slide">
               <h3>Безопасность</h3>
               <p>Уделяем внимание безопасности клиентов, внедряя строгие процедуры и протоколы безопасности. Имеем планы
@@ -784,7 +768,7 @@
         </div>
       </div>
     </section>
-    <section class="gallery" data-test="gallery">
+    <section class="gallery" data-test="gallery" id="gallery">
       <div class="container">
         <h2 class="gallery__heading" data-heading="Фотогалерея">Фотогалерея</h2>
         <p>Добавляйте фото с хэштегом #лайфтур, а&nbsp;также&nbsp;отмечайте нас на фото. Лучшие фотографии украсят этот
@@ -792,9 +776,7 @@
           нашего сайта.</p>
       </div>
       <div class="gallery__swiper swiper">
-        <!-- Additional required wrapper -->
         <div class="gallery__wrapper swiper-wrapper">
-          <!-- Slides -->
           <div class="gallery__item gallery__item--large swiper-slide">
             <picture>
               <source type="image/webp" media="(min-width: 1440px)"
@@ -977,19 +959,16 @@
             <legend class="visually-hidden">Отправить заявку на для консультацию</legend>
 
             <div class="form__group">
-              <!-- <span class="visually-hidden">Телефон</span> -->
               <input class="form__input form__input-phone" type="tel" name="phone" placeholder="+7 (000)-000-00-00"
                 id="input-phone" required>
               <label class="form__label" for="input-phone">Телефон</label>
             </div>
 
             <div class="form__group">
-              <!-- <span class="visually-hidden">Email</span> -->
               <input class="form__input form__input-name" type="text" name="email" placeholder="example@почта.рф" id="input-email"
                 required>
               <label class="form__label" for="input-email">Email</label>
             </div>
-            <!-- placeholder="Email" -->
             <button class="button form__button" type="submit">Отправить</button>
           </fieldset>
         </form>
@@ -997,7 +976,7 @@
       </div>
     </section>
   </main>
-  <footer class="footer" data-test="footer">
+  <footer class="footer" data-test="footer" id="footer">
     <div class="container">
       <section class="contacts">
         <div class="contacts__content-wrapper">
@@ -1046,7 +1025,7 @@
             srcset="img/images/contacts-map-tablet@1x.png 1x, img/images/contacts-map-tablet@2x.png 2x" width="768"
             height="340">
           <img class="contacts__image" src="img/images/contacts-map-mobile@1x.jpg"
-            srcset="img/images/contacts-map-mobile@2x.png" width="320" height="343" alt="мы на карте">
+            srcset="img/images/contacts-map-mobile@2x.png" width="320" height="343" alt="мы находимся по адресу г. Москва, пр-т Мира, д. 14, офис">
         </picture>
       </section>
 

@@ -15,7 +15,7 @@
     gap: 120px;
   }
 
-  &:after {
+  &::after {
     position: absolute;
     content: "";
     width: 100vw;
@@ -25,6 +25,7 @@
     bottom: -20px;
     display: flex;
     align-self: center;
+
     @media (min-width: $tablet-width) {
       bottom: -40px;
     }
@@ -127,6 +128,7 @@
     font-size: 14px;
     line-height: 22px;
   }
+
   @media (min-width: $desktop-width) {
     font-size: 16px;
     line-height: 24px;
@@ -286,11 +288,13 @@
 
 .contacts__list-phone::before {
   background-image: url("/__spritemap#sprite-phone-view");
+
   // background-image: url("../../img/sprite/phone.svg");
 }
 
 .contacts__list-email::before {
   background-image: url("/__spritemap#sprite-mail-view");
+
   // background-image: url("../../img/sprite/mail.svg");
   // width: 20px;
   // height: 14px;
@@ -299,6 +303,7 @@
 .contacts__list-address::before {
   // background-image: url("../../img/sprite/pin-contacts.svg");
   background-image: url("/__spritemap#sprite-pin-contacts-view");
+
   // width: 15px;
   // height: 20px;
 }

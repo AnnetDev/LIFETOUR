@@ -3,7 +3,7 @@ export const toggleMenu = () => {
     const menuToggle = document.querySelector('.header__toggle');
     const menu = document.querySelector('.main-navigation');
     const toggleIcon = document.querySelector('.header__toggle-icon');
-    const menuLinks = document.querySelectorAll('.main-navigation__link'); // Ссылки меню
+    const menuLinks = document.querySelectorAll('.main-navigation__link');
     const main = document.querySelector('.main-container');
 
     menuToggle.addEventListener('click', () => {
@@ -27,6 +27,7 @@ export const toggleMenu = () => {
           menuToggle.classList.remove('header__toggle--opened');
           toggleIcon.classList.remove('header__toggle-icon--opened');
           document.body.classList.remove('overlay-no-scroll');
+          main.classList.toggle('overlay-active');
         }
       }
       );

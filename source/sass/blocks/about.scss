@@ -11,10 +11,6 @@
     flex-direction: row;
   }
 
-  @media (min-width: $tablet-width) and (width <= 1339px) {
-
-  }
-
   @media (min-width: $desktop-width) {
     max-width: 1440px;
 
@@ -159,11 +155,12 @@
 
 .about__content-wrapper div:first-of-type {
   margin-bottom: 26px;
+
   @media (min-width: $tablet-width) {
     margin-bottom: 27px;
   }
+
   @media (min-width: $desktop-width) {
     margin-bottom: 29px;
   }
 }
-

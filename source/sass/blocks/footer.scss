@@ -1,17 +1,18 @@
 .footer {
-  padding: 36px 0 20px 0;
+  padding: 36px 0 20px;
 
   @media (min-width: $tablet-width) {
-    padding: 60px 0 20px 0;
+    padding: 60px 0 20px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 123px 0 32px 0;
+    padding: 123px 0 32px;
   }
 }
 
 .footer-main {
   padding: 23px 0 0;
+
   @media (min-width: $tablet-width) {
     padding: 34px 0 0;
   }
@@ -63,6 +64,7 @@
   &:hover,
   &:focus {
     opacity: 40%;
+    outline: none;
   }
 
   &:active {
@@ -70,7 +72,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 29px 0 29px;
+    margin: 0 29px;
   }
 }
 
@@ -108,7 +110,7 @@
     width: 800px;
     justify-content: center;
     gap: 21px;
-    margin: 1px 0 0 0;
+    margin: 1px 0 0;
   }
 }
 
@@ -164,7 +166,6 @@
   &:active {
     color: $primary-blue;
     outline: none;
-
   }
 }
 
@@ -187,7 +188,7 @@
     line-height: 18px;
     text-align: right;
     transition: all 0.3s ease;
-    margin: 1px 0 0 0;
+    margin: 1px 0 0;
   }
 
   &:hover {
@@ -209,7 +210,6 @@
     color: #999999;
     pointer-events: none;
   }
-
 }
 
 .footer__privacy {
@@ -225,9 +225,12 @@
   text-align: center;
   transition: all 0.3s ease;
   cursor: pointer;
+
   &:hover,
   &:focus {
-opacity: 40%;  }
+    opacity: 40%;
+    outline: none;
+  }
 
   &:active {
     color: rgba(2, 102, 193, 0.1);
