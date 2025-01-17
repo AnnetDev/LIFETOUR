@@ -48,6 +48,7 @@
 }
 
 .contacts__image {
+  background-color: #bdddC2;
   display: block;
   margin: 0 calc((100% - 320px) / 2);
 
@@ -164,7 +165,6 @@
   padding: 0 0 0 32px;
   gap: 8px;
 
-
   @media (min-width: $tablet-width) {
     padding: 0 0 0 34px;
     gap: 6px;
@@ -272,7 +272,6 @@
   background-position: center;
   background-size: contain;
 
-  /* или auto, если размер не нужно подгонять */
   @media (min-width: $tablet-width) {
     width: 24px;
     height: 24px;
@@ -288,22 +287,12 @@
 
 .contacts__list-phone::before {
   background-image: url("/__spritemap#sprite-phone-view");
-
-  // background-image: url("../../img/sprite/phone.svg");
 }
 
 .contacts__list-email::before {
   background-image: url("/__spritemap#sprite-mail-view");
-
-  // background-image: url("../../img/sprite/mail.svg");
-  // width: 20px;
-  // height: 14px;
 }
 
 .contacts__list-address::before {
-  // background-image: url("../../img/sprite/pin-contacts.svg");
   background-image: url("/__spritemap#sprite-pin-contacts-view");
-
-  // width: 15px;
-  // height: 20px;
 }

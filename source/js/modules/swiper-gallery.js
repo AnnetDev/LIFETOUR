@@ -34,7 +34,7 @@ export function initializeGalleySwiper() {
 
     if (isNowDesktop && gallerySlider) {
       gallerySlider.destroy(true, true);
-      gallerySlider = null; // Reset slider instance
+      gallerySlider = null;
     } else if (!isNowDesktop && !gallerySlider) {
       initializeGalleySwiper();
     }

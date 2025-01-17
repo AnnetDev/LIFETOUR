@@ -38,7 +38,6 @@ export function initializeHeroSwiper() {
     },
   });
 
-  // Handle focus issue and ensure proper slide transition when tabbing
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Tab') {
       const focusedElement = document.activeElement;

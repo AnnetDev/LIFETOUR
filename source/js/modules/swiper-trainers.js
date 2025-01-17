@@ -20,28 +20,25 @@ export function initializeTrainingSwiper() {
       768: {
         slidesPerView: 3,
         initialSlide: 0,
-        spaceBetween: 20, //?
+        spaceBetween: 20,
       },
       1440: {
         slidesPerView: 4,
-        spaceBetween: 20, //?
+        spaceBetween: 20,
       },
     },
   });
 
-  // Добавление Tab-порядка
   const prevButton = document.querySelector('.training__button.swiper-button-prev');
   const nextButton = document.querySelector('.training__button.swiper-button-next');
   const linkButton = document.querySelector('.training__trainer-social-link');
 
 
   if (prevButton && nextButton) {
-    // Устанавливаем tabindex для стрелок
     prevButton.setAttribute('tabindex', '0');
     nextButton.setAttribute('tabindex', '0');
     linkButton.setAttribute('tabindex', '0');
 
-    // Событие для обработки нажатия клавиши "Enter" на стрелках
     prevButton.addEventListener('keydown', (event) => {
       if (event.key === 'Enter') {
         swiperTrainers.slidePrev();

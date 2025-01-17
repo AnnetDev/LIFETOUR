@@ -54,16 +54,12 @@
       font-size: 40px;
       line-height: 40px;
       top: -17px;
-
-      // margin: 0 0 46px;
     }
 
     @media (min-width: $desktop-width) {
       font-size: 55px;
       line-height: 55px;
       top: -38px;
-
-      // margin: 0 0 57px;
     }
   }
 }
@@ -111,7 +107,7 @@
     flex-direction: column;
     border: 1px solid hsla(209, 98%, 38%, 0.1);
     align-items: center;
-    height: auto; // или фиксированную
+    height: auto;
   }
 
   &::after {
@@ -210,9 +206,7 @@
     width: 100px;
     height: 20px;
     bottom: -70px;
-    right: 670px; // to change
+    right: 670px;
     z-index: 1;
-
-    // justify-content: flex-end;
   }
 }

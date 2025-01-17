@@ -68,7 +68,6 @@
 
   @media (min-width: $desktop-width) {
     width: 820px;
-
     margin: 0 0 61px;
   }
 }
@@ -326,7 +325,6 @@
     left: 0;
     top: 11px;
 
-    // transform: translateY(-50%);
     @media (min-width: $tablet-width) {
       display: none;
     }
@@ -365,7 +363,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    // width: 235px;
     padding-right: 15px;
 
     &::before {

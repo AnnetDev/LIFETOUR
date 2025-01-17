@@ -8,7 +8,6 @@
 
   @media (min-width: $desktop-width) {
     padding: 145px 0 67px;
-
   }
 }
 
@@ -17,19 +16,10 @@
   all: unset;
   box-shadow: 0 0 20px 0 rgba(28, 51, 116, 0.1);
   background-color: $primary-white;
-
-
-  // border: 1px solid red;
   padding: 20px 20px 0;
-
-  // padding: 20px;
   display: flex;
   flex-flow: column wrap;
-
-  // gap: 20px;
   max-width: 290px;
-
-  // margin-left: -15px;
 
   @media (min-width: $tablet-width) {
     flex-flow: row nowrap;
@@ -117,18 +107,18 @@
 }
 
 .reviews p:first-of-type {
-  margin-bottom: 10px; // ?
+  margin-bottom: 10px;
 }
 
 .reviews p:last-of-type {
-  margin-bottom: 14px; // ?
+  margin-bottom: 14px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 25px; // ?
+    margin-bottom: 25px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 4px; // ?
+    margin-bottom: 4px;
   }
 }
 
@@ -182,17 +172,13 @@
   min-width: 320px;
   max-width: 320px;
 
-  // padding: 15px 0;
-
   @media (min-width: $tablet-width) {
-    // padding: 0 0 0 45px;
     max-width: 768px;
   }
 
   @media (min-width: $desktop-width) {
     max-width: 1440px;
     position: relative;
-    // padding: 0 0 0 120px;
   }
 }
 
@@ -220,7 +206,6 @@
 }
 
 .reviews__swiper.swiper {
-  // padding: 50px;
   padding: 15px;
   margin: -15px;
   overflow: hidden;
@@ -233,10 +218,6 @@
 }
 
 .reviews__swiper .swiper-wrapper {
-  // padding: 15px;
-  // margin: -15px;
-  // overflow: hidden;
-
   position: relative;
   @media (min-width: $tablet-width) {
     padding: 25px 25px 25px 45px;

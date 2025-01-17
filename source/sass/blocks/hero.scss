@@ -1,7 +1,5 @@
 .hero {
   display: flex;
-
-  // flex-flow: column wrap;
   color: $primary-white;
   background-color: #54432d;
 }
@@ -10,7 +8,6 @@
   display: flex;
   height: fit-content;
   min-height: 568px;
-  // max-height: fit-content;
   width: 320px;
   position: relative;
 
@@ -62,8 +59,6 @@
   top: 0;
   left: 50%;
   transform: translate(-50%);
-
-  // transition: transform 0.5s ease;
 
   @media (min-width: $tablet-width) {
     width: 768px;
@@ -208,7 +203,6 @@
   }
 }
 
-
 .hero__swiper .swiper-pagination {
   width: 88px;
   height: 16px;
@@ -264,7 +258,7 @@
   &:focus-visible {
     outline: solid 1px rgba(255, 255, 255, 0.5);
     outline-offset: 2px;
-  } // разобраться с фокусом и переключением слайдов
+  }
 }
 
 .hero__swiper .swiper-pagination-bullet-active {
@@ -279,10 +273,5 @@
   &:focus-visible {
     outline: solid 1px rgba(255, 255, 255, 0.5);
     outline-offset: 2px;
-  } // разобраться с фокусом и переключением слайдов
+  }
 }
-
-// .hero__swiper .swiper-slide[aria-hidden="true"] {
-//   visibility: hidden;
-//   overflow: unset;
-// }

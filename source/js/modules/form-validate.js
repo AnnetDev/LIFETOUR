@@ -27,7 +27,6 @@ export function formValidator() {
     if (!isValid) {
       event.preventDefault();
     }
-
   }
   );
 
