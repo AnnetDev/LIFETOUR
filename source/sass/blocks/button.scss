@@ -1,0 +1,39 @@
+.button {
+  display: block;
+  margin: 0;
+  padding: 19px 10px;
+  color: $primary-white;
+  background-color: $primary-blue;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+  text-align: center;
+  border: 1px solid $primary-blue;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+
+  &:disabled {
+    background-color: #999999;
+    border: 1px solid #999999;
+  }
+
+  &:hover {
+    background-color: $primary-white;
+    border: 1px solid #1c3374;
+    color: #1c3374;
+  }
+
+  &:focus,
+  &:focus-within,
+  &:focus-visible {
+    border: 1px solid $primary-white;
+    background-color: $primary-white;
+    color: #1c3374;
+    outline: none;
+  }
+
+  &:active {
+    background-color: #1c3374;
+    border: 1px solid #1c3374;
+    color: $primary-white;
+  }
+}

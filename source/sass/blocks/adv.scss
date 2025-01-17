@@ -1,0 +1,212 @@
+.advantages {
+  padding: 36px 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 60px 0 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 135px 0 185px;
+  }
+}
+
+.advantages__container.container {
+  position: relative;
+
+  @media (min-width: $desktop-width) {
+    padding: unset;
+  }
+}
+
+.advantages__heading {
+  font-size: 22px;
+  font-weight: 800;
+  line-height: 22px;
+  text-align: center;
+  position: relative;
+  margin: 0 0 37px;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 25px;
+    line-height: 25px;
+    margin: 0 0 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 35px;
+    line-height: 35px;
+    margin: 0 0 50px;
+  }
+
+  &::before {
+    position: absolute;
+    content: attr(data-heading);
+    font-size: 26px;
+    line-height: 26px;
+    text-align: center;
+    opacity: 3%;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    @media (min-width: $tablet-width) {
+      font-size: 40px;
+      line-height: 40px;
+      top: -17px;
+    }
+
+    @media (min-width: $desktop-width) {
+      font-size: 55px;
+      line-height: 55px;
+      top: -38px;
+    }
+  }
+}
+
+.advantages__list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  @media (min-width: $tablet-width) {
+    gap: 30px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    all: unset;
+  }
+}
+
+.advantages__item.swiper-slide,
+.advantages__item.swiper-slide.swiper-slide-active {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid hsla(209, 98%, 38%, 0.1);
+  background-color: $primary-white;
+  padding: 20px 9px 19px;
+  align-items: center;
+  width: 290px;
+  height: auto;
+
+  @media (min-width: $tablet-width) {
+    padding: 30px 19px 29px;
+    width: 324px;
+  }
+
+  @media (min-width: $desktop-width) {
+    all: unset;
+    padding: 39px 19px;
+    width: 380px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid hsla(209, 98%, 38%, 0.1);
+    align-items: center;
+    height: auto;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 24px;
+    height: 24px;
+    outline: solid $primary-blue 1px;
+    outline-offset: 8px;
+    top: 28px;
+
+    @media (min-width: $tablet-width) {
+      top: 41px;
+      outline-offset: 11px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 55px;
+      outline-offset: 15px;
+    }
+  }
+}
+
+.advantages__item--safety::after {
+  background-image: url("/__spritemap#sprite-safety-view");
+}
+
+.advantages__item--expertise::after {
+  background-image: url("/__spritemap#sprite-expertise-view");
+}
+
+.advantages__item--equipment::after {
+  background-image: url("/__spritemap#sprite-equipment-view");
+}
+
+.advantages__item--routes::after {
+  background-image: url("/__spritemap#sprite-routes-view");
+}
+
+.advantages__item--eco::after {
+  background-image: url("/__spritemap#sprite-eco-view");
+}
+
+.advantages__item h3 {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 14px;
+  text-align: center;
+  margin: 61px 0 15px;
+  padding: 0;
+  width: 248px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 16px;
+    margin: 73px 0 14px;
+    width: unset;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 84px 0 15px;
+    font-size: 18px;
+    line-height: 18px;
+  }
+}
+
+.advantages__item p {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 340px;
+  }
+}
+
+.advantages__navigation {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0;
+    gap: 4px;
+    position: absolute;
+    content: "";
+    width: 100px;
+    height: 20px;
+    bottom: -70px;
+    right: 670px;
+    z-index: 1;
+  }
+}

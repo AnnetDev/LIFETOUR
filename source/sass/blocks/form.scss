@@ -1,0 +1,234 @@
+.form {
+  margin: 0;
+  padding: 15px 0;
+  display: flex;
+  justify-content: center;
+  background-color: #cccccc;
+  background-image:
+    image-set(url("../../img/images/form-mobile@1x.webp") 1x,
+    url("../../img/images/form-mobile@2x.webp") 2x,
+    url("../../img/images/form-mobile@1x.png") 1x,
+    url("../../img/images/form-mobile@2x.png") 2x,
+  );
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center top;
+  min-height: 638px;
+
+  @media (min-width: $tablet-width) {
+    padding: 30px 0;
+
+    background-image:
+      image-set(url("../../img/images/form-tablet@1x.webp") 1x,
+      url("../../img/images/form-tablet@2x.webp") 2x,
+      url("../../img/images/form-tablet@1x.png") 1x,
+      url("../../img/images/form-tablet@2x.png") 2x,
+    );
+    min-height: 680px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 60px 0;
+    background-image:
+      image-set(url("../../img/images/form-desktop@1x.webp") 1x,
+      url("../../img/images/form-desktop@2x.webp") 2x,
+      url("../../img/images/form-desktop@1x.png") 1x,
+      url("../../img/images/form-desktop@2x.png") 2x,
+    );
+    min-height: 760px;
+  }
+}
+
+.form__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form h2 {
+  font-size: 22px;
+  font-weight: 800;
+  line-height: 22px;
+  text-align: center;
+  color: $primary-white;
+  margin: 162px 0 17px;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 25px;
+    line-height: 25px;
+    margin: 157px 0 23px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 35px;
+    line-height: 35px;
+    margin: 236px 0 18px;
+  }
+}
+
+.form p {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: center;
+  color: $primary-white;
+  margin-bottom: 20px;
+  width: 220px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 24px;
+    width: 300px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 39px;
+    width: 1360px;
+  }
+}
+
+.form__fieldset {
+  margin: 0 0 10px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    gap: 11px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    gap: 30px;
+  }
+}
+
+.form__input {
+  min-height: 50px;
+  width: 258px;
+  padding: 15px;
+  margin: 0;
+  border-radius: 2px;
+  border: none;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: left;
+  color: $primary-dark;
+  transition: all 0.3s ease;
+  outline: none;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    min-height: 56px;
+    width: 360px;
+    padding: 15px 30px 16px;
+  }
+}
+
+.form__button {
+  min-height: 58px;
+  width: 258px;
+  padding: 20px 10px 19px;
+
+  @media (min-width: $tablet-width) {
+    padding: 20px 10px 18px;
+    min-height: 56px;
+    width: 360px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 20px 10px 18px;
+    width: 180px;
+  }
+}
+
+.form__input:hover {
+  outline: 1px solid $primary-blue;
+}
+
+.form__input::placeholder {
+  opacity: 0;
+}
+
+.form__input:focus {
+  outline: 1px solid $primary-dark;
+}
+
+.form__input:focus::placeholder {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: left;
+  color: $primary-dark;
+  opacity: 50%;
+  transition: all 0.3s ease;
+}
+
+.form__input:disabled {
+  pointer-events: none;
+  outline: 1px solid #999999;
+}
+
+.form__input--error {
+  outline: 1px solid #ff121f;
+}
+
+.form__group {
+  position: relative;
+}
+
+.form__label {
+  position: absolute;
+  content: "";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: left;
+  color: $primary-dark;
+  opacity: 50%;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  transition: all 0.3s ease;
+  pointer-events: none;
+
+  @media (min-width: $tablet-width) {
+    left: 30px;
+  }
+}
+
+.form__input:focus + .form__label,
+.form__input:focus-visible + .form__label,
+.form__input:not(:placeholder-shown) + .form__label {
+  opacity: 0;
+}
+
+.form__error-message {
+  position: absolute;
+  color: #ff121f;
+  font-size: 14px;
+  line-height: 22px;
+  bottom: -172px;
+
+  @media (min-width: $tablet-width) {
+    top: 18%;
+    left: -170px;
+    margin-top: 10px;
+    width: 158px;
+    bottom: unset;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 100%;
+    left: 0;
+    margin-top: 4px;
+    width: max-content;
+  }
+}
