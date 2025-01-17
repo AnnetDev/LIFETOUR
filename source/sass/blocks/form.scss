@@ -6,10 +6,10 @@
   background-color: #cccccc;
   background-image:
     image-set(url("../../img/images/form-mobile@1x.webp") 1x,
-      url("../../img/images/form-mobile@2x.webp") 2x,
-      url("../../img/images/form-mobile@1x.png") 1x,
-      url("../../img/images/form-mobile@2x.png") 2x,
-    );
+    url("../../img/images/form-mobile@2x.webp") 2x,
+    url("../../img/images/form-mobile@1x.png") 1x,
+    url("../../img/images/form-mobile@2x.png") 2x,
+  );
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center top;
@@ -20,10 +20,10 @@
 
     background-image:
       image-set(url("../../img/images/form-tablet@1x.webp") 1x,
-        url("../../img/images/form-tablet@2x.webp") 2x,
-        url("../../img/images/form-tablet@1x.png") 1x,
-        url("../../img/images/form-tablet@2x.png") 2x,
-      );
+      url("../../img/images/form-tablet@2x.webp") 2x,
+      url("../../img/images/form-tablet@1x.png") 1x,
+      url("../../img/images/form-tablet@2x.png") 2x,
+    );
     min-height: 680px;
   }
 
@@ -31,10 +31,10 @@
     padding: 60px 0;
     background-image:
       image-set(url("../../img/images/form-desktop@1x.webp") 1x,
-        url("../../img/images/form-desktop@2x.webp") 2x,
-        url("../../img/images/form-desktop@1x.png") 1x,
-        url("../../img/images/form-desktop@2x.png") 2x,
-      );
+      url("../../img/images/form-desktop@2x.webp") 2x,
+      url("../../img/images/form-desktop@1x.png") 1x,
+      url("../../img/images/form-desktop@2x.png") 2x,
+    );
     min-height: 760px;
   }
 }
@@ -204,9 +204,9 @@
   }
 }
 
-.form__input:focus+.form__label,
-.form__input:focus-visible+.form__label,
-.form__input:not(:placeholder-shown)+.form__label {
+.form__input:focus + .form__label,
+.form__input:focus-visible + .form__label,
+.form__input:not(:placeholder-shown) + .form__label {
   opacity: 0;
 }
 
