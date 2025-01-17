@@ -1,5 +1,5 @@
 import Swiper from 'swiper';
-import { Pagination, Keyboard, A11y, EffectCreative } from 'swiper/modules';
+import { Pagination, Keyboard, A11y } from 'swiper/modules';
 import 'swiper/scss';
 
 export function initializeHeroSwiper() {
@@ -9,19 +9,11 @@ export function initializeHeroSwiper() {
   }
 
   const swiper = new Swiper(heroSwiperContainer, {
-    modules: [Pagination, Keyboard, A11y, EffectCreative],
+    modules: [Pagination, Keyboard, A11y],
     loop: true,
     loopedSlides: 3,
     effect: 'creative',
-    creativeEffect: {
-      prev: {
-        shadow: true,
-        translate: ['-20%', 0, -1],
-      },
-      next: {
-        translate: ['100%', 0, 0],
-      },
-    }, slidesPerView: 1,
+    slidesPerView: 1,
     keyboard: {
       enabled: true,
       onlyInViewport: true,
