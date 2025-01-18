@@ -22,8 +22,8 @@ main {
     background-image:
       image-set(url("../../img/images/clouds-mobile@1x.webp") 1x,
       url("../../img/images/clouds-mobile@2x.webp") 2x,
-      url("../../img/images/clouds-mobile@1x.png") 1x,
-      url("../../img/images/clouds-mobile@2x.png") 2x,
+      url("../../img/images/clouds-mobile@1x.jpg") 1x,
+      url("../../img/images/clouds-mobile@2x.jpg") 2x,
     );
     background-repeat: no-repeat;
     background-size: auto;
@@ -33,11 +33,11 @@ main {
       background-image:
         image-set(url("../../img/images/clouds-tablet@1x.webp") 1x,
         url("../../img/images/clouds-tablet@2x.webp") 2x,
-        url("../../img/images/clouds-tablet@1x.png") 1x,
-        url("../../img/images/clouds-tablet@2x.png") 2x,
+        url("../../img/images/clouds-tablet@1x.jpg") 1x,
+        url("../../img/images/clouds-tablet@2x.jpg") 2x,
       );
 
-      width: 3047px;
+      width: 3050px;
       height: 3531px;
       top: 942px;
       left: -661px;
@@ -47,14 +47,14 @@ main {
       background-image:
         image-set(url("../../img/images/clouds-desktop@1x.webp") 1x,
         url("../../img/images/clouds-desktop@2x.webp") 2x,
-        url("../../img/images/clouds-desktop@1x.png") 1x,
-        url("../../img/images/clouds-desktop@2x.png") 2x,
+        url("../../img/images/clouds-desktop@1x.jpg") 1x,
+        url("../../img/images/clouds-desktop@2x.jpg") 2x,
       );
 
       width: 3196px;
       height: 3290px;
       top: 674px;
-      left: -312px;
+      left: -239px;
     }
   }
 
