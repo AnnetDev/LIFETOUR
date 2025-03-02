@@ -12,7 +12,7 @@ dist
 backstop_data
 .cache
 *.local
-package-lock.json
+# package-lock.json
 
 # Editor directories and files
 .vscode/*
