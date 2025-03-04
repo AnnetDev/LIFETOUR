@@ -75,10 +75,10 @@
 .tours__slide-caucasus {
   background-color: #37798f;
   background-image:
-    image-set(url("../../img/images/tours-caucasus-mobile@1x.webp") 1x,
-    url("../../img/images/tours-caucasus-mobile@2x.webp") 2x,
-    url("../../img/images/tours-caucasus-mobile@1x.jpg") 1x,
-    url("../../img/images/tours-caucasus-mobile@2x.jpg") 2x,
+    image-set(url("../img/images/tours-caucasus-mobile@1x.webp") 1x,
+    url("../img/images/tours-caucasus-mobile@2x.webp") 2x,
+    url("../img/images/tours-caucasus-mobile@1x.jpg") 1x,
+    url("../img/images/tours-caucasus-mobile@2x.jpg") 2x,
   );
   background-repeat: no-repeat;
   background-size: auto;
@@ -86,19 +86,19 @@
 
   @media (min-width: $tablet-width) {
     background-image:
-      image-set(url("../../img/images/tours-caucasus-tablet@1x.webp") 1x,
-      url("../../img/images/tours-caucasus-tablet@2x.webp") 2x,
-      url("../../img/images/tours-caucasus-tablet@1x.jpg") 1x,
-      url("../../img/images/tours-caucasus-tablet@2x.jpg") 2x,
+      image-set(url("../img/images/tours-caucasus-tablet@1x.webp") 1x,
+      url("../img/images/tours-caucasus-tablet@2x.webp") 2x,
+      url("../img/images/tours-caucasus-tablet@1x.jpg") 1x,
+      url("../img/images/tours-caucasus-tablet@2x.jpg") 2x,
     );
   }
 
   @media (min-width: $desktop-width) {
     background-image:
-      image-set(url("../../img/images/tours-caucasus-desktop@1x.webp") 1x,
-      url("../../img/images/tours-caucasus-desktop@2x.webp") 2x,
-      url("../../img/images/tours-caucasus-desktop@1x.jpg") 1x,
-      url("../../img/images/tours-caucasus-desktop@2x.jpg") 2x,
+      image-set(url("../img/images/tours-caucasus-desktop@1x.webp") 1x,
+      url("../img/images/tours-caucasus-desktop@2x.webp") 2x,
+      url("../img/images/tours-caucasus-desktop@1x.jpg") 1x,
+      url("../img/images/tours-caucasus-desktop@2x.jpg") 2x,
     );
   }
 }
@@ -106,10 +106,10 @@
 .tours__slide-altai {
   background-color: #37798f;
   background-image:
-    image-set(url("../../img/images/tours-altai-mobile@1x.webp") 1x,
-    url("../../img/images/tours-altai-mobile@2x.webp") 2x,
-    url("../../img/images/tours-altai-mobile@1x.jpg") 1x,
-    url("../../img/images/tours-altai-mobile@2x.jpg") 2x,
+    image-set(url("../img/images/tours-altai-mobile@1x.webp") 1x,
+    url("../img/images/tours-altai-mobile@2x.webp") 2x,
+    url("../img/images/tours-altai-mobile@1x.jpg") 1x,
+    url("../img/images/tours-altai-mobile@2x.jpg") 2x,
   );
   background-repeat: no-repeat;
   background-size: auto;
@@ -117,19 +117,19 @@
 
   @media (min-width: $tablet-width) {
     background-image:
-      image-set(url("../../img/images/tours-altai-tablet@1x.webp") 1x,
-      url("../../img/images/tours-altai-tablet@2x.webp") 2x,
-      url("../../img/images/tours-altai-tablet@1x.jpg") 1x,
-      url("../../img/images/tours-altai-tablet@2x.jpg") 2x,
+      image-set(url("../img/images/tours-altai-tablet@1x.webp") 1x,
+      url("../img/images/tours-altai-tablet@2x.webp") 2x,
+      url("../img/images/tours-altai-tablet@1x.jpg") 1x,
+      url("../img/images/tours-altai-tablet@2x.jpg") 2x,
     );
   }
 
   @media (min-width: $desktop-width) {
     background-image:
-      image-set(url("../../img/images/tours-altai-desktop@1x.webp") 1x,
-      url("../../img/images/tours-altai-desktop@2x.webp") 2x,
-      url("../../img/images/tours-altai-desktop@1x.jpg") 1x,
-      url("../../img/images/tours-altai-desktop@2x.jpg") 2x,
+      image-set(url("../img/images/tours-altai-desktop@1x.webp") 1x,
+      url("../img/images/tours-altai-desktop@2x.webp") 2x,
+      url("../img/images/tours-altai-desktop@1x.jpg") 1x,
+      url("../img/images/tours-altai-desktop@2x.jpg") 2x,
     );
   }
 }
@@ -137,10 +137,10 @@
 .tours__slide-adygeya {
   background-color: #37798f;
   background-image:
-    image-set(url("../../img/images/tours-adygeya-mobile@1x.webp") 1x,
-    url("../../img/images/tours-adygeya-mobile@2x.webp") 2x,
-    url("../../img/images/tours-adygeya-mobile@1x.jpg") 1x,
-    url("../../img/images/tours-adygeya-mobile@2x.jpg") 2x,
+    image-set(url("../img/images/tours-adygeya-mobile@1x.webp") 1x,
+    url("../img/images/tours-adygeya-mobile@2x.webp") 2x,
+    url("../img/images/tours-adygeya-mobile@1x.jpg") 1x,
+    url("../img/images/tours-adygeya-mobile@2x.jpg") 2x,
   );
   background-repeat: no-repeat;
   background-size: auto;
@@ -148,19 +148,19 @@
 
   @media (min-width: $tablet-width) {
     background-image:
-      image-set(url("../../img/images/tours-adygeya-tablet@1x.webp") 1x,
-      url("../../img/images/tours-adygeya-tablet@2x.webp") 2x,
-      url("../../img/images/tours-adygeya-tablet@1x.jpg") 1x,
-      url("../../img/images/tours-adygeya-tablet@2x.jpg") 2x,
+      image-set(url("../img/images/tours-adygeya-tablet@1x.webp") 1x,
+      url("../img/images/tours-adygeya-tablet@2x.webp") 2x,
+      url("../img/images/tours-adygeya-tablet@1x.jpg") 1x,
+      url("../img/images/tours-adygeya-tablet@2x.jpg") 2x,
     );
   }
 
   @media (min-width: $desktop-width) {
     background-image:
-      image-set(url("../../img/images/tours-adygeya-desktop@1x.webp") 1x,
-      url("../../img/images/tours-adygeya-desktop@2x.webp") 2x,
-      url("../../img/images/tours-adygeya-desktop@1x.jpg") 1x,
-      url("../../img/images/tours-adygeya-desktop@2x.jpg") 2x,
+      image-set(url("../img/images/tours-adygeya-desktop@1x.webp") 1x,
+      url("../img/images/tours-adygeya-desktop@2x.webp") 2x,
+      url("../img/images/tours-adygeya-desktop@1x.jpg") 1x,
+      url("../img/images/tours-adygeya-desktop@2x.jpg") 2x,
     );
   }
 }
@@ -168,10 +168,10 @@
 .tours__slide-ural {
   background-color: #37798f;
   background-image:
-    image-set(url("../../img/images/tours-ural-mobile@1x.webp") 1x,
-    url("../../img/images/tours-ural-mobile@2x.webp") 2x,
-    url("../../img/images/tours-ural-mobile@1x.jpg") 1x,
-    url("../../img/images/tours-ural-mobile@2x.jpg") 2x,
+    image-set(url("../img/images/tours-ural-mobile@1x.webp") 1x,
+    url("../img/images/tours-ural-mobile@2x.webp") 2x,
+    url("../img/images/tours-ural-mobile@1x.jpg") 1x,
+    url("../img/images/tours-ural-mobile@2x.jpg") 2x,
   );
   background-repeat: no-repeat;
   background-size: auto;
@@ -179,19 +179,19 @@
 
   @media (min-width: $tablet-width) {
     background-image:
-      image-set(url("../../img/images/tours-ural-tablet@1x.webp") 1x,
-      url("../../img/images/tours-ural-tablet@2x.webp") 2x,
-      url("../../img/images/tours-ural-tablet@1x.jpg") 1x,
-      url("../../img/images/tours-ural-tablet@2x.jpg") 2x,
+      image-set(url("../img/images/tours-ural-tablet@1x.webp") 1x,
+      url("../img/images/tours-ural-tablet@2x.webp") 2x,
+      url("../img/images/tours-ural-tablet@1x.jpg") 1x,
+      url("../img/images/tours-ural-tablet@2x.jpg") 2x,
     );
   }
 
   @media (min-width: $desktop-width) {
     background-image:
-      image-set(url("../../img/images/tours-ural-desktop@1x.webp") 1x,
-      url("../../img/images/tours-ural-desktop@2x.webp") 2x,
-      url("../../img/images/tours-ural-desktop@1x.jpg") 1x,
-      url("../../img/images/tours-ural-desktop@2x.jpg") 2x,
+      image-set(url("../img/images/tours-ural-desktop@1x.webp") 1x,
+      url("../img/images/tours-ural-desktop@2x.webp") 2x,
+      url("../img/images/tours-ural-desktop@1x.jpg") 1x,
+      url("../img/images/tours-ural-desktop@2x.jpg") 2x,
     );
   }
 }
