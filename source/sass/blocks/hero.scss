@@ -50,7 +50,6 @@
 .hero__swiper-image {
   display: flex;
   position: absolute;
-  content: "";
   width: 320px;
   height: 568px;
   z-index: -1;
@@ -70,6 +69,7 @@
     height: 800px;
   }
 }
+
 
 .hero__slide-container {
   padding-top: 41px;
