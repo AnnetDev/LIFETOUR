@@ -78,6 +78,7 @@
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
+  align-content: center;
 
   @media (min-width: $tablet-width) {
     padding-top: 40px;
@@ -273,5 +274,26 @@
   &:focus-visible {
     outline: solid 1px rgba(255, 255, 255, 0.5);
     outline-offset: 2px;
+  }
+}
+
+.hero__header-translate {
+  border: none;
+  font-size: 12px;
+  line-height: 12px;
+  text-transform: uppercase;
+  color: $primary-dark;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+
+  &:hover,
+  &:focus,
+  &:focus-within,
+  &:focus-visible  {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
   }
 }

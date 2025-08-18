@@ -6,6 +6,7 @@ import { initializeReviewsSwiper } from './modules/swiper-reviews';
 import { initializeAdvSwiper } from './modules/swiper-adv';
 import { initializeGalleySwiper } from './modules/swiper-gallery';
 import { formValidator } from './modules/form-validate';
+import { toggleLanguage, setInitialLanguage } from './modules/translate-page';
 
 
 toggleMenu();
@@ -16,3 +17,10 @@ initializeReviewsSwiper();
 initializeAdvSwiper();
 initializeGalleySwiper();
 formValidator();
+setInitialLanguage();
+const langButton = document.querySelector('.language-switcher');
+if (langButton) {
+  langButton.addEventListener('click', toggleLanguage);
+}
+
+toggleLanguage();
