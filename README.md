@@ -1,4 +1,4 @@
-# LIFETOUR accelerator-first-project
+# LIFETOUR accelerator project
 
 
 ## Getting Started
