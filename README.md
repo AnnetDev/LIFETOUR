@@ -1,5 +1,5 @@
 # LIFETOUR accelerator project
-
+Responsive website for a travel agency, designed for optimal performance across various devices. Built with HTML, SCSS, JavaScript, and third-party libraries for sliders. Integrated form validation and optimised the website for accessibility, ensuring semantic code with high accessibility. Enhanced user engagement by improving page load speed and simplifying the booking process.
 
 ## Getting Started
 
