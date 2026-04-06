@@ -11,9 +11,10 @@ function loadTranslations(lang) {
       document.querySelectorAll('[data-translate]').forEach((el) => {
         const key = el.getAttribute('data-translate');
         if (translations[lang][key]) {
-          el.textContent = translations[lang][key];
           const hidden = el.querySelector('.visually-hidden');
+          el.textContent = translations[lang][key];
           if (hidden) {
+            el.appendChild(hidden);
             hidden.textContent = translations[lang][key];
           }
           if (el.hasAttribute('data-heading')) {
