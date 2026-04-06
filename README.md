@@ -1,55 +1,78 @@
-# LIFETOUR accelerator project
+# LIFETOUR — Mountain Tourism Landing Page
 
+A responsive one-page website for a hiking and mountain tourism company. The site presents upcoming tours, instructors, company info, customer reviews, and a contact form, with full Russian/English language switching.
+
+## Stack
+
+- **HTML5** — semantic markup, BEM methodology
+- **SCSS** — modular styles, BEM naming
+- **JavaScript (ES modules)** — vanilla JS, no frameworks
+- **Vite** — dev server, bundling, image optimization
+- **Swiper** — touch-friendly sliders
+- **PostCSS / Autoprefixer** — CSS post-processing
+- **BackstopJS** — Pixel Perfect visual regression testing
+
+## Features
+
+- **Responsive layout** — mobile (320px), tablet (768px), desktop (1440px)
+- **Hero slider** — full-screen slides with Caucasus, Kamchatka, and Altai tours; custom animated bullets
+- **Tours section** — swipeable cards with difficulty, dates, and group size
+- **Instructors slider** — trainer profiles with photos and social links
+- **Reviews slider** — customer testimonials
+- **Advantages section** — safety, expertise, equipment, custom routes, eco-responsibility
+- **Photo gallery** — responsive image grid
+- **Contact form** — client-side validation
+- **i18n (RU / EN)** — JSON-driven language switcher; translates text content, attributes (`alt`, `aria-label`, `content`), and Swiper bullets; persists preference in `localStorage`
+- **WebP images** — `<picture>` elements with WebP + JPEG/PNG fallbacks, 1x/2x srcsets
+- **SVG sprite** — icon system assembled from `source/img/sprite/`
+- **Font preloading** — Montserrat (Regular → ExtraBold) via `<link rel="preload">`
 
 ## Getting Started
 
-1. Install node.js
-2. Check your Node.js version with `node --version`
-3. Supported build version: 18+
-4. Install dependencies with:
+Requirements: Node.js 18+
 
 ```shell
-npm i
+npm install
+npm run dev        # start dev server
+npm run build      # production build → dist/
+npm run preview    # preview the production build
 ```
 
-5. Start the project with:
+## Additional Commands
 
-```shell
-npm run dev
+| Command | Description |
+|---|---|
+| `npm run convert-rastr` | Convert raster images to WebP |
+| `npm run test` | Pixel Perfect testing (requires dev server on port 3000) |
+| `npm run w3c` | W3C HTML validation |
+| `npm run linthtml` | HTML lint |
+| `npm run html-validate` | HTML validate |
+| `npm run lint-bem` | BEM compliance check |
+| `npm run stylelint` | SCSS lint (auto-fix) |
+| `npm run lint-js` | ESLint (auto-fix) |
+| `npm run ls-lint` | File/folder naming check |
+| `npm run editorconfig` | EditorConfig compliance check |
+| `npm run deploy` | Build and deploy to GitHub Pages |
+
+## Project Structure
+
 ```
-
-6. Additional commands for working with the build:
-
-- `npm run convert-rastr`: create WebP versions of raster images in the `source/img/`;
-- `npm run dev` starts the development server;
-- `npm run build`  builds an optimized version of the project into the `dist` folder;
-- `npm run preview` launches a server with the optimized version;
-- the sprite with icons is assembled from files in the `source/img/sprite/` folder;
-- to access the sprite from `html` use the path `href="/__spritemap#sprite-{название файла иконки}"`;
-
-7. In the `index.html` file in the `source` folder, you’ll find tips on the structure of your project.
-
-## Self-checks
-
-Pixel Perfect testing
-
-You can run Pixel Perfect testing for your project with:
-
-```shell
-npm run test 
+source/
+├── index.html          # single page entry point
+├── js/
+│   ├── main.js
+│   └── modules/
+│       ├── translate-page.js   # i18n logic
+│       ├── burger-menu.js
+│       ├── form-validate.js
+│       ├── swiper-hero.js
+│       ├── swiper-tours.js
+│       ├── swiper-gallery.js
+│       ├── swiper-reviews.js
+│       └── swiper-trainers.js
+├── sass/               # SCSS styles (BEM blocks)
+├── img/                # images and SVG sprite sources
+├── fonts/              # Montserrat woff/woff2
+└── public/
+    └── translations.json   # RU/EN translation strings
 ```
-
-The testing framework accesses  `localhost:3000`, so the server must be running via `npm run dev`.
-Run the testing command in a new terminal without closing the project’s server.
-
-The project uses a number of additional tools for self-checking. Use them during development and before submitting your project:
-
-- `npm run w3c`: checks HTML validity;
-- `npm run linthtml`: checks markup according to linthtml rules;
-- `npm run html-validate`: checks HTML;
-- `npm run lint-bem`: checks BEM compliance;
-- `npm run stylelint`: checks styles against stylelint rules;
-- `npm run lint-js`: checks scripts against eslint rules;
-- `npm run ls-lint`: checks file and folder naming;
-- `npm run editorconfig`: checks editorconfig compliance.
-
